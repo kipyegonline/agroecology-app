@@ -111,7 +111,7 @@ seasonally and culturally appropriate diets`,
     description: `Support dignified and robust livelihoods for all actors engaged in food systems,
 especially small-scale food producers, based on fair trade, fair employment and fair treatment of
 intellectual property rights`,
-    categories: ["FA,FS"],
+    categories: ["FA,", "FS"],
     fao: ["human and social values"],
   },
   {

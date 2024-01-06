@@ -16,25 +16,25 @@ let isActive=true
 </script>
 
 <svelte:head>
-	<title>Home</title>
-	<meta name="description" content="Svelte demo app" />
+	<title>Home| Agroecology app</title>
+	<meta name="description" content="All things agroecology" />
 </svelte:head>
 
 
 
 	
 	<section>
-		<h1>Principles of Agroecology</h1>
+		<h1 style:color="blue" >Principles of Agroecology</h1>
 	<ul class="principles" >
 		{#each poe as p,index  (p.name)}
 		
 	<li >
-		<div  class="card" transition:fade>
+		<div  class="card" class:active={isActive}>
 			<h3>{p.name}</h3>
 			<p>{p.description}</p>
 			<div class="chips">
 				{#each p.categories as cat }
-				<small> {cat}</small>
+				<span> {cat}</span>
 				{/each }
 			</div>
 
@@ -116,14 +116,17 @@ let isActive=true
 }
 	.card p{
 		text-align: center;
+		min-height: 100px;
+		border:1px solid magenta;
+		padding:1rem;
 	}
 	.chips{
-		margin-top:2rem;
+		margin-top:1rem;
 		display:flex;
 		justify-content: center;
 		gap:1rem;
 	}
-	.chips small{
+	.chips span{
 		border-radius:10px;
 		border:1px solid green;
 		padding:5px 10px;
