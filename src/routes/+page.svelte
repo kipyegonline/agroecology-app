@@ -5,18 +5,27 @@
 	import MyRandomList from "../components/randomList.svelte"
   import { poe } from '../components/payload';
   import { fade } from 'svelte/transition';
+  import { onMount } from 'svelte';
+  import { user } from '../store/store';
  
 	let name="Vincent Kipyegon";
 	let count=0;
 	let friends=["Jules","Harriet","Joy","Elvis","Mr. Kiprono","Allan Kim"]
 $:multiplier=count * 4;
-
+$:console.log(" count has changed: "+ count)
+$:{
+	console.log("changes...___",multiplier)
+}
+let info:string
 
 let isActive=true
+onMount(()=>{
+	user.set({ name: "Kipyegon", married: false, age: 20 })
+})
 </script>
 
 <svelte:head>
-	<title>Home| Agroecology app</title>
+	<title>Home| Agroecology app </title>
 	<meta name="description" content="All things agroecology" />
 </svelte:head>
 
@@ -25,6 +34,8 @@ let isActive=true
 	
 	<section>
 		<h1 style:color="blue" >Principles of Agroecology</h1>
+		<p>{$user?.name ?? "No user"}</p>
+		{JSON.parse($user)}
 	<ul class="principles" >
 		{#each poe as p,index  (p.name)}
 		
@@ -45,10 +56,14 @@ let isActive=true
 	</ul>
 	</section>
 	
+	<button on:click={()=>count++}>Add me {count}/{multiplier}</button>
 	
-	
+	{#each poe as p,index  (p.name)}
 
 	
+
+	<MyRandomList index={index}> {p.name}</MyRandomList>
+	{/each}
 
 	<Counter />
 

@@ -5,7 +5,7 @@
 
 </script>
 
-<li transition:fade on:click={()=>getValue(index+1)}>{index+1}. {" "}{friend}</li>
+<li transition:fade on:click={()=>getValue(index+1)}>{index+1}.{"  "} <slot></slot></li>
 <style>
     li{
         border-bottom:1px solid #ccc;
