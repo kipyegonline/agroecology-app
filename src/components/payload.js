@@ -1,3 +1,9 @@
+export const agroecology = `Agroecology is an integrated approach that simultaneously applies ecological
+and social concepts and principles to the design and management of food and
+agricultural systems.
+It seeks to optimize the interactions between plants,
+animals, humans and the environment while taking into consideration the social
+aspects that need to be addressed for a sustainable and fair food system.`;
 export const principles = [
   ` recycling`,
   `input reduction`,
@@ -141,3 +147,9 @@ management of agricultural and food systems.`,
 ];
 
 const scale = { FA: "farm", FS: "food system", FI: "field" };
+/**
+ * However, high-external input, resource-intensive
+agricultural systems have caused massive deforestation, water scarcities,
+biodiversity loss, soil depletion and high levels of greenhouse gas emissions.
+ */
+const eoe = [{ name: "", des: "" }];

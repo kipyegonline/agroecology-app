@@ -31,17 +31,18 @@
   });
   let current = -1;
   const handleClick = (num: number) => (current = num);
+  $: title = "Farm";
 </script>
 
 <svelte:head>
-  <title>Home| Agroecology app</title>
+  <title>Home| Agroecology app | {title}</title>
   <meta name="description" content="All things agroecology" />
 </svelte:head>
 
 <section>
-  <h1 style:color="blue">Principles of Agroecology</h1>
+  <h1 style:color="blue">Principles of Agroecology | {$user?.age}</h1>
   <p>{$user?.name ?? "No user"}</p>
-  {JSON.parse($user)}
+  {JSON.parse($user) ?? {}}
   <ul class="principles">
     {#each poe as p, index (p.name)}
       <li>
