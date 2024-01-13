@@ -8,7 +8,7 @@
   <title>agroecology|Elements of agroecology</title>
 </svelte:head>
 <section>
-  <p>{agroecology}</p>
+  <p className="text-center text-xl">{agroecology}</p>
   <h1>Elements of agroecology</h1>
   <ul style="list-style:none;">
     {#each elements as element, i}
