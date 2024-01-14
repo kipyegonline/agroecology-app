@@ -46,8 +46,7 @@
     {$user?.age ?? ""}
   </h1>
   <a href="/elements-of-agroecology">Elements</a>
-  <p>{$user?.name ?? "No user"}</p>
-  {JSON.stringify($user) ?? {}}
+
   <ul class="principles">
     {#each poe as p, index (p.name)}
       <li>
@@ -64,20 +63,6 @@
     {/each}
   </ul>
 </section>
-
-<button on:click={() => count++}>Add me {count}/{multiplier}</button>
-<ul>
-  {#each poe as p, index (p.name)}
-    <MyRandomList {index} bind:current click={() => handleClick(index)}>
-      {p.name}
-      <span style="margin-left:2rem">
-        Related to: {p.fao.join(",")}
-      </span></MyRandomList
-    >
-  {/each}
-</ul>
-
-<Counter />
 
 <style>
   .active {

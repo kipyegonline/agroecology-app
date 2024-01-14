@@ -36,3 +36,12 @@ npm run build
 You can preview the production build with `npm run preview`.
 
 > To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
+
+site:http://lever.co | site:http://greenhouse.io | site:http://jobs.ashbyhq.com (developer | engineer)"hybrid" "react" after:2024-01-11
+
+site:http://lever.co | site:http://greenhouse.io | site:http://glassdoor.com | site:https://uk.indeed.com (developer | engineer)"remote " "Rotterdam" "react javascript" "typescript" after:2024-01-11
+site:http://lever.co | site:http://greenhouse.io | site:http://glassdoor.com | site:https://uk.indeed.com (developer | engineer)"remote " "The Hague" "react javascript" "typescript" after:2024-01-11
+site:http://lever.co | site:http://greenhouse.io | site:http://glassdoor.com | site:https://uk.indeed.com (developer | engineer)"remote " "Utrecht" "react javascript" "typescript" after:2024-01-11
+site:http://lever.co | site:http://greenhouse.io | site:http://glassdoor.com | site:https://uk.indeed.com (developer | engineer)"remote " "Eindhoven" "react" "javascript" "typescript" after:2024-01-11
+
+Amsterdam, Rotterdam, The Hague, Utrecht, and Eindhoven
