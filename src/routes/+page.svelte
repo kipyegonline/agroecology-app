@@ -138,7 +138,7 @@
   }
   ul {
     list-style: none;
-    background: beige;
+    background: white;
     padding: 1rem;
     transition: all 500ms ease-in;
   }

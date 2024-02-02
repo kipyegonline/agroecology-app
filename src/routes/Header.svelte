@@ -1,7 +1,10 @@
 <script>
+  import { colorScheme } from "@svelteuidev/core";
+  //import { MoonIcon as Moon, SunIcon as Sun } from "lucide-svelte";
   import { page } from "$app/stores";
   import logo from "$lib/images/svelte-logo.svg";
   import github from "$lib/images/github.svg";
+  const isDark = $colorScheme === "dark";
 </script>
 
 <header>
@@ -18,12 +21,15 @@
       <li><a href="#">Blogs</a></li>
     </ul>
   </nav>
-
-  <div class="corner hidden">
-    <a href="https://github.com/sveltejs/kit">
-      <img src={github} alt="GitHub" />
-    </a>
-  </div>
+  <!--
+  <div class="absolute right-0 mr-4">
+    {#if isDark}
+      <span><Moon /></span>
+    {:else}
+      <span><Sun /></span>
+    {/if}
+    <span></span>
+  </div>-->
 </header>
 
 <style>
