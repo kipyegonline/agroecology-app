@@ -1,8 +1,4 @@
 <script lang="ts">
-  import Counter from "./Counter.svelte";
-  import welcome from "$lib/images/svelte-welcome.webp";
-  import welcome_fallback from "$lib/images/svelte-welcome.png";
-  import MyRandomList from "../components/randomList.svelte";
   import { poe } from "../components/payload";
   import { fade } from "svelte/transition";
   import { onMount } from "svelte";
@@ -41,10 +37,7 @@
 </svelte:head>
 
 <section>
-  <h1 style="color: blue;">
-    Principles of Agroecology {$user?.age ? "|" : ""}
-    {$user?.age ?? ""}
-  </h1>
+  <h1 style="color: blue;">Principles of Agroecology</h1>
   <a href="/elements-of-agroecology">Elements</a>
 
   <ul class="principles">
@@ -148,8 +141,5 @@
     background: beige;
     padding: 1rem;
     transition: all 500ms ease-in;
-  }
-  ul:hover {
-    transform: rotate(1deg);
   }
 </style>

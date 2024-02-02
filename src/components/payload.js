@@ -4,6 +4,7 @@ agricultural systems.
 It seeks to optimize the interactions between plants,
 animals, humans and the environment while taking into consideration the social
 aspects that need to be addressed for a sustainable and fair food system.`;
+
 export const principles = [
   ` recycling`,
   `input reduction`,
