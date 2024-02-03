@@ -1,25 +1,37 @@
 <script>
-  import { SvelteUIProvider, colorScheme } from "@svelteuidev/core";
+  import {
+    SvelteUIProvider,
+    colorScheme,
+    AppShell,
+    Navbar,
+    Footer,
+  } from "@svelteuidev/core";
   import Header from "./Header.svelte";
   import "./styles.css";
 </script>
 
 <div class="app">
-  <SvelteUIProvider
-    class="border--400 border container"
-    withNormalizeCSS
-    withGlobalStyles
-    themeObserver={$colorScheme}
-  >
-    <Header />
-
-    <main>
-      <slot />
-    </main>
-  </SvelteUIProvider>
-  <footer>
-    <p>All rights Reserved &copy; {new Date().getFullYear()}</p>
-  </footer>
+  <AppShell>
+    <Navbar class="border border-red-400 p-2 h-auto" width={{ base: "100%" }}
+      ><Header /></Navbar
+    >
+    <SvelteUIProvider
+      class="border--400 border container"
+      withNormalizeCSS
+      withGlobalStyles
+      themeObserver={$colorScheme}
+    >
+      <main class="mt-20">
+        <slot />
+      </main>
+    </SvelteUIProvider>
+    <Footer
+      height={60}
+      class="bg-green-700 text-white flex items-center justify-center fixed bottom-0"
+    >
+      <p>All rights Reserved &copy; {new Date().getFullYear()}</p>
+    </Footer>
+  </AppShell>
 </div>
 
 <style>

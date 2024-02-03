@@ -2,7 +2,9 @@
   import { poe } from "../components/payload";
   import { fade } from "svelte/transition";
   import { onMount } from "svelte";
-  import { user } from "../store/store";
+  import { user, principlesofAgroEcology } from "../store/store";
+  import Card from "../components/Card/Card.svelte";
+  import { Box } from "@svelteuidev/core";
 
   let name = "Vincent Kipyegon";
   let count = 0;
@@ -36,25 +38,14 @@
   <meta name="description" content="All things agroecology" />
 </svelte:head>
 
-<section>
+<section class="pt-10 mt-5">
   <h1 style="color: blue;">Principles of Agroecology</h1>
   <a href="/elements-of-agroecology">Elements</a>
-
-  <ul class="principles">
-    {#each poe as p, index (p.name)}
-      <li>
-        <div class="card" class:active={isActive}>
-          <h3>{p.name}</h3>
-          <p>{p.description}</p>
-          <div class="chips">
-            {#each p.categories as cat}
-              <span> {cat}</span>
-            {/each}
-          </div>
-        </div>
-      </li>
-    {/each}
-  </ul>
+  <Box class="flex gap-4 flex-wrap">
+    {#each $principlesofAgroEcology as p, index (p.name)}
+      <Card {p} />
+    {/each}</Box
+  >
 </section>
 
 <style>
