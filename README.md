@@ -40,8 +40,9 @@ You can preview the production build with `npm run preview`.
 site:http://lever.co | site:http://greenhouse.io | site:http://jobs.ashbyhq.com (developer | engineer)"hybrid" "react" after:2024-01-11
 
 site:http://lever.co | site:http://greenhouse.io | site:http://glassdoor.com | site:https://uk.indeed.com (developer | engineer)"remote " "Rotterdam" "react javascript" "typescript" after:2024-01-11
-site:http://lever.co | site:http://greenhouse.io | site:http://glassdoor.com | site:https://uk.indeed.com (developer | engineer)"remote " "The Hague" "react javascript" "typescript" after:2024-01-11
-site:http://lever.co | site:http://greenhouse.io | site:http://glassdoor.com | site:https://uk.indeed.com (developer | engineer)"remote " "Utrecht" "react javascript" "typescript" after:2024-01-11
-site:http://lever.co | site:http://greenhouse.io | site:http://glassdoor.com | site:https://uk.indeed.com (developer | engineer)"remote " "Eindhoven" "react" "javascript" "typescript" after:2024-01-11
+site:http://lever.co | site:http://greenhouse.io | site:http://glassdoor.com | site:https://uk.indeed.com (developer | engineer)"remote " "The Hague" "react javascript" "typescript" after:2024-02-01
+site:http://lever.co | site:http://greenhouse.io | site:http://glassdoor.com | site:https://uk.indeed.com (developer | engineer)"remote " "Utrecht" "react javascript" "typescript" after:2024-02-01
+site:http://lever.co | site:http://greenhouse.io | site:http://glassdoor.com | site:https://uk.indeed.com (developer | engineer)"remote" "Eindhoven" "react" "javascript" "typescript" after:2024-02-01
+site:http://lever.co | site:http://greenhouse.io | site:http://glassdoor.com | site:https://uk.indeed.com (developer | engineer) "Nairobi" "react" "javascript" "typescript" after:2024-02-01
 
 Amsterdam, Rotterdam, The Hague, Utrecht, and Eindhoven

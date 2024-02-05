@@ -2,15 +2,15 @@
   import { colorScheme } from "@svelteuidev/core";
   //import { MoonIcon as Moon, SunIcon as Sun } from "lucide-svelte";
   import { page } from "$app/stores";
-  import logo from "$lib/images/svelte-logo.svg";
+  import logo from "$lib/images/agroecology_logo.png";
   import github from "$lib/images/github.svg";
   const isDark = $colorScheme === "dark";
 </script>
 
 <header>
   <div class="corner">
-    <a href="https://kit.svelte.dev">
-      <img src={logo} alt="SvelteKit" />
+    <a href="/">
+      <img src={logo} alt="SvelteKit" class="h-40 w-40 max-w-full" />
     </a>
   </div>
 

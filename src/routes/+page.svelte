@@ -4,7 +4,7 @@
   import { onMount } from "svelte";
   import { user, principlesofAgroEcology } from "../store/store";
   import Card from "../components/Card/Card.svelte";
-  import { Box } from "@svelteuidev/core";
+  import { Box, Text } from "@svelteuidev/core";
 
   let name = "Vincent Kipyegon";
   let count = 0;
@@ -39,8 +39,10 @@
 </svelte:head>
 
 <section class="pt-10 mt-5">
-  <h1 style="color: blue;">Principles of Agroecology</h1>
-  <a href="/elements-of-agroecology">Elements</a>
+  <Text variant="gradient" class=" text-2xl md:text-5xl py-2 my-4" underline
+    >Principles of Agroecology</Text
+  >
+
   <Box class="flex gap-4 flex-wrap">
     {#each $principlesofAgroEcology as p, index (p.name)}
       <Card {p} />

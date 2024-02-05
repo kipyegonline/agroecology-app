@@ -6,10 +6,11 @@ export const user: Writable<null | {
   married: boolean;
 }> = writable(null);
 
+type Categories = "FA" | "FS" | "FI";
 export interface POE {
   name: string;
   description: string;
-  categories: string[];
+  categories: Array<Categories>;
   fao: Array<string>;
 }
 

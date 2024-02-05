@@ -118,7 +118,7 @@ seasonally and culturally appropriate diets`,
     description: `Support dignified and robust livelihoods for all actors engaged in food systems,
 especially small-scale food producers, based on fair trade, fair employment and fair treatment of
 intellectual property rights`,
-    categories: ["FA,", "FS"],
+    categories: ["FA", "FS"],
     fao: ["human and social values"],
   },
   {
@@ -147,7 +147,6 @@ management of agricultural and food systems.`,
   },
 ];
 
-const scale = { FA: "farm", FS: "food system", FI: "field" };
 /**
  * However, high-external input, resource-intensive
 agricultural systems have caused massive deforestation, water scarcities,
