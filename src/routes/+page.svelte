@@ -5,7 +5,7 @@
   import { user, principlesofAgroEcology } from "../store/store";
   import Card from "../components/Card/Card.svelte";
   import { Box, Text, Center, Card as SvelteCard } from "@svelteuidev/core";
-
+  import { agroecology } from "$components/payload";
   let title = "";
 </script>
 
@@ -21,8 +21,14 @@
       >What is Agroecology</Text
     >
   </Center>
-  <Center>
-    <SvelteCard>Agroecology is the sustainable</SvelteCard>
+  <Center class="min w-full min-w-60  p-4 border border-cyan-600">
+    <SvelteCard class="p-4 rounded-lg">
+      <Text
+        size="lg"
+        class="leading-6 text-justify first-letter:text-4xl first-letter:font-medium"
+        >{agroecology}</Text
+      ></SvelteCard
+    >
   </Center>
   <!--organic farming-->
   <Center>
@@ -30,8 +36,19 @@
       >What is organic farming</Text
     >
   </Center>
-  <Center>
-    <SvelteCard>Organic farming</SvelteCard>
+  <Center class="min w-full min-w-60  p-4 border border-cyan-600">
+    <SvelteCard class="p-4 rounded-lg">
+      <Text
+        size="lg"
+        class="leading-6 text-justify first-letter:text-4xl first-letter:font-medium"
+        >Organic farming is a system of agriculture that prioritizes natural
+        processes and ecological balance over the use of synthetic chemicals. It
+        aims to produce food and other agricultural products in a way that is
+        <b
+          >sustainable and minimizes harm to the environment and human health.</b
+        ></Text
+      >
+    </SvelteCard>
   </Center>
   <!--characteristics-->
   <!--Benefits-->
