@@ -43,7 +43,7 @@
     >Principles of Agroecology</Text
   >
 
-  <Box class="flex gap-4 flex-wrap">
+  <Box class="flex   gap-4 flex-wrap">
     {#each $principlesofAgroEcology as p, index (p.name)}
       <Card {p} />
     {/each}</Box

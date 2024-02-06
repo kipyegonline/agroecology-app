@@ -12,6 +12,8 @@ export interface POE {
   description: string;
   categories: Array<Categories>;
   fao: Array<string>;
+  image: string;
+  more: string;
 }
 
 export const principlesofAgroEcology: Writable<POE[]> = writable(poe);

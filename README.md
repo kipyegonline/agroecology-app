@@ -37,12 +37,15 @@ You can preview the production build with `npm run preview`.
 
 > To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
 
-site:http://lever.co | site:http://greenhouse.io | site:http://jobs.ashbyhq.com (developer | engineer)"hybrid" "react" after:2024-01-11
+site:https://lever.co | site:https://greenhouse.io | site:https://jobs.ashbyhq.com | site:https://weworkremotely.com (developer | engineer)"hybrid" "react" after:2024-02-04
 
-site:http://lever.co | site:http://greenhouse.io | site:http://glassdoor.com | site:https://uk.indeed.com (developer | engineer)"remote " "Rotterdam" "react javascript" "typescript" after:2024-01-11
-site:http://lever.co | site:http://greenhouse.io | site:http://glassdoor.com | site:https://uk.indeed.com (developer | engineer)"remote " "The Hague" "react javascript" "typescript" after:2024-02-01
-site:http://lever.co | site:http://greenhouse.io | site:http://glassdoor.com | site:https://uk.indeed.com (developer | engineer)"remote " "Utrecht" "react javascript" "typescript" after:2024-02-01
-site:http://lever.co | site:http://greenhouse.io | site:http://glassdoor.com | site:https://uk.indeed.com (developer | engineer)"remote" "Eindhoven" "react" "javascript" "typescript" after:2024-02-01
-site:http://lever.co | site:http://greenhouse.io | site:http://glassdoor.com | site:https://uk.indeed.com (developer | engineer) "Nairobi" "react" "javascript" "typescript" after:2024-02-01
+site:http://lever.co | site:http://greenhouse.io | site:http://glassdoor.com | site:https://uk.indeed.com | site:https://weworkremotely.com (developer | engineer) "remote " "Rotterdam" "javascript" after:2024-02-04
+site:http://lever.co | site:http://greenhouse.io | site:http://glassdoor.com | site:https://uk.indeed.com (developer | engineer) "remote " "The Hague" "react" "javascript" "typescript" after:2024-02-04
+site:http://lever.co | site:http://greenhouse.io | site:http://glassdoor.com | site:https://uk.indeed.com (developer | engineer)"remote " "Utrecht" "react" "javascript" "typescript" after:2024-02-04
+site:http://lever.co | site:http://greenhouse.io | site:http://glassdoor.com | site:https://uk.indeed.com (developer | engineer)"remote" "Eindhoven" "react" "javascript" "typescript" after:2024-02-04
+site:http://lever.co | site:http://greenhouse.io | site:http://glassdoor.com | site:https://uk.indeed.com (developer | engineer) "Nairobi" "react" "javascript" "typescript" after:2024-02-04
 
 Amsterdam, Rotterdam, The Hague, Utrecht, and Eindhoven
+site:http://lever.co | site:http://greenhouse.io | site:http://glassdoor.com | site:https://uk.indeed.com (developer | engineer)"relocation " "London" "python" after:2022-11-17
+https://weworkremotely.com/
+https://grocycle.com/what-is-agroecology/
