@@ -17,6 +17,9 @@
   <nav>
     <ul>
       <li><a href="/">Home</a></li>
+      <li>
+        <a href="/principles-of-agroecology">Principles of Agroecology</a>
+      </li>
       <li><a href="/elements-of-agroecology">Elements of Agroecology</a></li>
       <li><a href="#">Blogs</a></li>
     </ul>

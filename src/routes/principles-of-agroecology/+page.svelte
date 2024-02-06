@@ -1,42 +1,37 @@
 <script lang="ts">
-  import { poe } from "../components/payload";
+  import { poe } from "$components/payload";
   import { fade } from "svelte/transition";
   import { onMount } from "svelte";
-  import { user, principlesofAgroEcology } from "../store/store";
-  import Card from "../components/Card/Card.svelte";
-  import { Box, Text, Center, Card as SvelteCard } from "@svelteuidev/core";
+  import { user, principlesofAgroEcology } from "$store/store";
+  import Card from "$components/Card/Card.svelte";
+  import { Box, Text } from "@svelteuidev/core";
 
-  let title = "";
+  let info: string;
+
+  onMount(() => {
+    user.set({ name: "Kipyegon", married: false, age: 20 });
+  });
+  let current = -1;
+  const handleClick = (num: number) => (current = num);
+  $: title = "Farm";
+  let h1styles = { padding: "5px", color: "blue", fontStyle: "italics" };
 </script>
 
 <svelte:head>
   <title>Home| Agroecology app | {title}</title>
   <meta name="description" content="All things agroecology" />
 </svelte:head>
-<!--what is agroecology-->
 
 <section class="pt-10 mt-5">
-  <Center>
-    <Text variant="gradient" class=" text-2xl md:text-5xl py-2 my-4" underline
-      >What is Agroecology</Text
-    >
-  </Center>
-  <Center>
-    <SvelteCard>Agroecology is the sustainable</SvelteCard>
-  </Center>
-  <!--organic farming-->
-  <Center>
-    <Text variant="gradient" class=" text-2xl md:text-5xl py-2 my-4" underline
-      >What is organic farming</Text
-    >
-  </Center>
-  <Center>
-    <SvelteCard>Organic farming</SvelteCard>
-  </Center>
-  <!--characteristics-->
-  <!--Benefits-->
-  <!---Examples->
-<!- principles and elements-->
+  <Text variant="gradient" class=" text-2xl md:text-5xl py-2 my-4" underline
+    >Principles of Agroecology</Text
+  >
+
+  <Box class="flex   gap-4 flex-wrap">
+    {#each $principlesofAgroEcology as p, index (p.name)}
+      <Card {p} />
+    {/each}</Box
+  >
 </section>
 
 <style>
@@ -55,6 +50,21 @@
     width: 100%;
   }
 
+  .welcome {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding: 0 0 calc(100% * 495 / 2048) 0;
+  }
+
+  .welcome img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    display: block;
+  }
   .principles {
     list-style: none;
     padding: 5px 0;

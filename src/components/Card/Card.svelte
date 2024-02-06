@@ -30,7 +30,8 @@
   <Center class=" min-h-40  overflow-hidden pb-2 mb-4"
     ><Image
       src={p.image}
-      alt=""
+      alt={p.name}
+      title={p.name}
       class="mx-w-full h-60 md:h-40  object-fill "
     /></Center
   >
