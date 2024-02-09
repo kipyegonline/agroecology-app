@@ -5,7 +5,7 @@
 </script>
 
 <svelte:head>
-  <title>agroecology|Elements of agroecology</title>
+  <title>Agroecology|Elements of agroecology</title>
   <meta name="description" content="Elements of Agroecology" />
 </svelte:head>
 <section class="p-4">

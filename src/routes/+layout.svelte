@@ -12,16 +12,14 @@
 
 <div class="app">
   <AppShell>
-    <Navbar class="border border-red-400 p-2 h-auto" width={{ base: "100%" }}
-      ><Header /></Navbar
-    >
+    <Navbar class=" p-2 h-auto" width={{ base: "100%" }}><Header /></Navbar>
     <SvelteUIProvider
       class="border--400 border container"
       withNormalizeCSS
       withGlobalStyles
       themeObserver={$colorScheme}
     >
-      <main class="mt-20">
+      <main class=" border-green-400 border">
         <slot />
       </main>
     </SvelteUIProvider>

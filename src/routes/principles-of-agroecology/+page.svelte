@@ -13,13 +13,13 @@
   });
   let current = -1;
   const handleClick = (num: number) => (current = num);
-  $: title = "Farm";
+  let title = "Principles of agroecology";
   let h1styles = { padding: "5px", color: "blue", fontStyle: "italics" };
 </script>
 
 <svelte:head>
-  <title>Home| Agroecology app | {title}</title>
-  <meta name="description" content="All things agroecology" />
+  <title>Home| {title}</title>
+  <meta name="description" content="Principles of agroecology" />
 </svelte:head>
 
 <section class="pt-10 mt-5">
@@ -27,7 +27,7 @@
     >Principles of Agroecology</Text
   >
 
-  <Box class="flex   gap-4 flex-wrap">
+  <Box class="flex   gap-3 flex-wrap">
     {#each $principlesofAgroEcology as p, index (p.name)}
       <Card {p} />
     {/each}</Box

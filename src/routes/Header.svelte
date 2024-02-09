@@ -1,10 +1,31 @@
-<script>
+<script lang="ts">
   import { colorScheme } from "@svelteuidev/core";
   //import { MoonIcon as Moon, SunIcon as Sun } from "lucide-svelte";
   import { page } from "$app/stores";
   import logo from "$lib/images/agroecology_logo.png";
   import github from "$lib/images/github.svg";
   const isDark = $colorScheme === "dark";
+  type Link = { name: String; link: string; active: boolean };
+  let links: Link[] = [
+    { name: "Home", link: "/", active: !false },
+    {
+      name: "Principles of Agroecology",
+      link: "/principles-of-agroecology",
+      active: false,
+    },
+    {
+      name: "Elements of Agroecology",
+      link: "/elements-of-agroecology",
+      active: false,
+    },
+    { name: "Related links", link: "/related-links", active: false },
+    { name: "Blogs", link: "/blogs", active: false },
+  ];
+  const handleLinkClick = (link: Link) => {
+    links = links.map((li) =>
+      li.name === link.name ? { ...li, active: true } : { ...li, active: false }
+    );
+  };
 </script>
 
 <header>
@@ -16,12 +37,15 @@
 
   <nav>
     <ul>
-      <li><a href="/">Home</a></li>
-      <li>
-        <a href="/principles-of-agroecology">Principles of Agroecology</a>
-      </li>
-      <li><a href="/elements-of-agroecology">Elements of Agroecology</a></li>
-      <li><a href="#">Blogs</a></li>
+      {#each links as link}
+        <li class="text-xl">
+          <a
+            class:active={link.active}
+            on:click={() => handleLinkClick(link)}
+            href={link.link}>{link.name}</a
+          >
+        </li>
+      {/each}
     </ul>
   </nav>
   <!--
@@ -52,6 +76,13 @@
     justify-content: center;
     width: 100%;
     height: 100%;
+  }
+  li a {
+    transition: all ease-in 500ms;
+  }
+  .active {
+    color: green;
+    border-bottom: 1px solid green;
   }
 
   .corner img {

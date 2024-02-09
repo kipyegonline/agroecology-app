@@ -15,7 +15,7 @@
 </svelte:head>
 <!--what is agroecology-->
 
-<section class="pt-10 mt-5">
+<section class="pt-10">
   <Center>
     <Text variant="gradient" class=" text-2xl md:text-5xl py-2 my-4" underline
       >What is Agroecology</Text
