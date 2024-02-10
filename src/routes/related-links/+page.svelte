@@ -16,6 +16,11 @@
   });
   let defaultLinks = [
     {
+      name: "PUBLIC CONSULTATION FEEDBACK ON THE DRAFT NATIONAL AGROECOLOGY STRATEGY FOR FOOD SYSTEM TRANSFORMATION",
+      des: "",
+      link: "https://kilimo.go.ke/public-consultation-feedback-on-the-draft-national-agroecology-strategy-for-food-system-transformation-2/",
+    },
+    {
       name: "THE 13 PRINCIPLES OF AGROECOLOGY",
       link: "https://www.agroecology-europe.org/the-13-principles-of-agroecology/",
       des: "",
@@ -92,10 +97,6 @@
 </svelte:head>
 
 <section class="pt-20 border-red">
-  <div class="p-4 text-center">
-    <h3 class="text-2xl">Agroecology links across the internet</h3>
-  </div>
-
   <ul class="flex gap-2 flex-col">
     {#if links}
       {#each links as link, i (link.link)}
@@ -109,10 +110,12 @@
                   size={15}
                 />
                 {#if link?.clicked}
-                  <CheckCheckIcon
-                    class="float-right"
-                    color={link?.clicked ? "blue" : "lightblue"}
-                  />
+                  <span title="clicked">
+                    <CheckCheckIcon
+                      class="float-right"
+                      color={link?.clicked ? "blue" : "lightblue"}
+                    /></span
+                  >
                 {/if}
               </p>
               <small>{link.des}</small>

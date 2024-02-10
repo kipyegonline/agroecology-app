@@ -1,7 +1,8 @@
 <script lang="ts">
   import { colorScheme } from "@svelteuidev/core";
-  //import { MoonIcon as Moon, SunIcon as Sun } from "lucide-svelte";
   import { page } from "$app/stores";
+  //import { MoonIcon as Moon, SunIcon as Sun } from "lucide-svelte";
+
   import logo from "$lib/images/agroecology_logo.png";
   import github from "$lib/images/github.svg";
   const isDark = $colorScheme === "dark";

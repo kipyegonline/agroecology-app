@@ -12,7 +12,7 @@
 
 <div class="app">
   <AppShell>
-    <Navbar class=" p-2 h-auto" width={{ base: "100%" }}><Header /></Navbar>
+    <Navbar class=" p-2 h-auto " width={{ base: "100%" }}><Header /></Navbar>
     <SvelteUIProvider
       class="border--400 border container"
       withNormalizeCSS

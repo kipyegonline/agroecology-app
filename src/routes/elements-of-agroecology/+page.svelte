@@ -8,9 +8,9 @@
   <title>Agroecology|Elements of agroecology</title>
   <meta name="description" content="Elements of Agroecology" />
 </svelte:head>
-<section class="p-4">
+<section class="pt-20">
   <a href="/">Home</a>
-  <p class="text-center text-xl">{agroecology}</p>
+  <p class="text-center text-lg">{agroecology}</p>
   <h1>Elements of agroecology</h1>
 
   <ul style="list-style:none;">
