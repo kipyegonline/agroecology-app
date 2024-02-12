@@ -1,5 +1,5 @@
 <script lang="ts">
-  import { Center } from "@svelteuidev/core";
+  import { Center, Text } from "@svelteuidev/core";
   import { agripics } from "../../store/store";
 </script>
 
@@ -8,12 +8,20 @@
   <meta name="description" content="Elements of Agroecology" />
 </svelte:head>
 <section class="pt-20 m-4">
-  <p>There are no blogs at the moment. Kindly check back soon.</p>
-  <div class="flex flex-wrap gap-4">
-    {#each $agripics as pic}
-      <div>
-        <img alt="blog image" class="min-h-20 max-w-60" src={pic} />
-      </div>
+  <div class="flex flex-col flex-wrap gap-4">
+    {#each $agripics as [a, b]}
+      <Center class=" ">
+        <div
+          class="flex flex-col md:flex-row gap-4 items-center gap justify-evenly"
+        >
+          <div class=" w-full md:w-1/2">
+            <img alt={b} class="w-full" src={a} />
+          </div>
+          <div class="border-cyan-400">
+            <Text size="lg">{b}</Text>
+          </div>
+        </div>
+      </Center>
     {/each}
   </div>
 </section>
