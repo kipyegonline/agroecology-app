@@ -1,4 +1,5 @@
 <script lang="ts">
+  import { onMount } from "svelte";
   import { colorScheme } from "@svelteuidev/core";
   import { page } from "$app/stores";
   import { Home, Trees, Flower2, Link, Rss, List } from "lucide-svelte";
@@ -6,14 +7,17 @@
 
   import logo from "$lib/images/agroecology_logo.png";
   import github from "$lib/images/github.svg";
-
-  const isDark = $colorScheme === "dark";
   type Link = {
     name: String;
     link: string;
     active: boolean;
     icon: any;
   };
+  onMount(() => {
+    alert("mounted");
+  });
+  const isDark = $colorScheme === "dark";
+
   let links: Link[] = [
     { name: "Home", link: "/", active: !false, icon: Home },
     {
@@ -29,6 +33,18 @@
       icon: Flower2,
     },
     {
+      name: "Examples",
+      link: "/agroecology-practices", //agroecology-practices
+      active: false,
+      icon: Flower2,
+    },
+    /* {
+      name: "Food holidays",
+      link: "/agroecology-practices",
+      active: false,
+      icon: Flower2,
+    },*/
+    {
       name: "Related links",
       link: "/related-links",
       active: false,
@@ -38,7 +54,7 @@
   ];
   const handleLinkClick = (link: string) => {
     links = links.map((li) =>
-      li.name === link ? { ...li, active: true } : { ...li, active: false }
+      li.link === link ? { ...li, active: true } : { ...li, active: false }
     );
   };
 </script>
@@ -54,7 +70,7 @@
     <ul>
       {#each links as { active, link, name, icon }}
         <li class="text-xl">
-          <a class:active on:click={() => handleLinkClick(name)} href={link}>
+          <a class:active on:click={() => handleLinkClick(link)} href={link}>
             <icon />
             <List size={16} class="mr-2" />
             {name}</a

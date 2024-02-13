@@ -17,8 +17,8 @@
           <div class=" w-full md:w-1/2">
             <img alt={b} class="w-full" src={a} />
           </div>
-          <div class="border-cyan-400">
-            <Text size="lg">{b}</Text>
+          <div class=" w-full md:w-1/2">
+            <Text size="lg" class="leading-6">{b}</Text>
           </div>
         </div>
       </Center>

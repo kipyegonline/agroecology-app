@@ -9,19 +9,45 @@
   <meta name="description" content="Elements of Agroecology" />
 </svelte:head>
 <section class="pt-20">
-  <a href="/">Home</a>
-  <p class="text-center text-lg">{agroecology}</p>
-  <h1>Elements of agroecology</h1>
+  <h1 class="">Elements of agroecology</h1>
 
-  <ul style="list-style:none;">
-    {#each elements as element, i}
-      <li>{i + 1}. {"  "}{element}</li>
-    {/each}
-  </ul>
+  <div class="overflow-x-scroll md:overflow-x-auto flex justify-center">
+    <table class="table">
+      <thead>
+        <tr><th>#</th><th>Element</th></tr>
+      </thead>
+      <tbody>
+        {#each elements as element, i}
+          <tr
+            ><th>{i + 1}.</th><th class="text-left capitalize font-medium"
+              >{element.name}</th
+            ></tr
+          >
+        {/each}
+      </tbody>
+    </table>
+  </div>
 </section>
 
 <style>
-  p::first-line {
-    color: rgb(51, 238, 13);
+  th {
+    border: 1px solid #ccc;
+    padding: 5px 10px;
+    border-collapse: collapse;
+  }
+  th:first-child {
+    width: 50px;
+  }
+
+  table {
+    max-width: 100%;
+    border: 1px solid red;
+    font-weight: 400;
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow:
+      3px 3px 5px #fff,
+      -3px -3px 5px #fff;
   }
 </style>

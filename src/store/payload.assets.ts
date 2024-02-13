@@ -28,7 +28,10 @@ export const agrimages = [
   [magician, "A farmer described as magician"],
   [wheat, "Healthy sorghum crops"],
   [banana, "Green banana fruit"],
-  [trees, "Cypress trees at the edge of an arable farm "],
+  [
+    trees,
+    "Cypress trees at the edge of an arable farm as wind breakers, trap road side dust and improve soil fertility ",
+  ],
   [cows, "Green pastures promotes resilient  animal health"],
   [berries, "Growing strawberries on recycled plastic rice bags"],
 ];

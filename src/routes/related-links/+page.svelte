@@ -5,14 +5,22 @@
   type Links = { name: string; link: string; des: string; clicked?: boolean };
   let title = "clicked-links";
   let links: Links[] | undefined;
-  const locallinks = JSON.parse(localStorage.getItem(title) as string);
+  const isWindow = globalThis?.window;
+  const locallinks = isWindow
+    ? JSON.parse(localStorage.getItem(title) as string)
+    : null;
+  const setItem = (items: links[]) =>
+    localStorage.setItem(title, JSON.stringify(items));
   onMount(() => {
     if (locallinks) {
-      links = locallinks;
-    } else links = defaultLinks;
+      if (locallinks.length !== defaultLinks.length) setItem(defaultLinks);
+      else links = locallinks;
+    } else {
+      links = defaultLinks;
+    }
   });
   onDestroy(() => {
-    localStorage.setItem(title, JSON.stringify(links));
+    if (links !== undefined) setItem(links);
   });
   let defaultLinks = [
     {
@@ -93,7 +101,7 @@
 
 <svelte:head>
   <title>Home| Agroecology app | related links</title>
-  <meta name="description" content="Agroecology resources" />
+  <meta name="description" content=" Agroecology resources" />
 </svelte:head>
 
 <section class="pt-20 border-red">

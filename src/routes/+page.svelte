@@ -7,11 +7,24 @@
   import { Box, Text, Center, Card as SvelteCard } from "@svelteuidev/core";
   import { agroecology } from "$components/payload";
   let title = "";
+
+  let orgdef = `Organic farming is a production
+system that sustains the health of soils, ecosystems
+and people. It relies on ecological processes,
+biodiversity and cycles adapted to local conditions,
+rather minimize harm to the environment and human health.
+Organic agriculture combines tradition, innovation
+and science to benefit the shared environment and
+promote fair relationships and a good quality of
+life for all involved. `;
 </script>
 
 <svelte:head>
   <title>Home| Agroecology app | {title}</title>
-  <meta name="description" content="All things agroecology" />
+  <meta
+    name="description"
+    content="A one stop platform for agroecology;  principles of agroecology, Elements of agroecology and agroecology examples, pictorials and blogs"
+  />
 </svelte:head>
 <!--what is agroecology-->
 
@@ -25,7 +38,7 @@
     <SvelteCard class="p-4 rounded-lg">
       <Text
         size="lg"
-        class="leading-6 text-justify first-letter:text-4xl first-letter:font-medium"
+        class="leading-6 text-justify first-letter:text-4xl first-letter:font-medium first-letter:text-green-600"
         >{agroecology}</Text
       ></SvelteCard
     >
@@ -40,13 +53,18 @@
     <SvelteCard class="p-4 rounded-lg">
       <Text
         size="lg"
-        class="leading-6 text-justify first-letter:text-4xl first-letter:font-medium"
+        class="leading-6 hidden text-justify first-letter:text-4xl first-letter:font-medium first-letter:text-green-600"
         >Organic farming is a system of agriculture that prioritizes natural
         processes and ecological balance over the use of synthetic chemicals. It
         aims to produce food and other agricultural products in a way that is
         <b
           >sustainable and minimizes harm to the environment and human health.</b
         ></Text
+      >
+      <Text
+        size="lg"
+        class="leading-6 text-justify first-letter:text-4xl first-letter:font-medium first-letter:text-green-600"
+        >{orgdef}</Text
       >
     </SvelteCard>
   </Center>

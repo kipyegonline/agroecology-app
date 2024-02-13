@@ -45,18 +45,30 @@ using ecological processes and ecosystem services for the de-
 velopment and implementation of agricultural practices`;
 
 export const elements = [
-  `diversity`,
-  `co-creation of knowledge`,
-  `Synergies`,
-  `efficiency`,
-  `recycling`,
-  `resilience`,
-  `human and social values`,
-  `Culture
+  {
+    name: `diversity`,
+    des: `Integrating various plant and animal species in agricultural landscapes to promote beneficial interactions and resilience.This entails species and genetic
+diversity, with surrounding forest resource biodiversity, insect biodiversity, soil organism
+biodiversity, plant and animal genetic diversity, habitat diversity, and the related diversities
+of culture and knowledge`,
+  },
+  { name: `co-creation of knowledge`, des: "" },
+  { name: `Synergies`, des: "" },
+  { name: `efficiency`, des: "" },
+  { name: `recycling`, des: "" },
+  { name: `resilience`, des: "" },
+  { name: `human and social values`, des: "" },
+  {
+    name: `Culture
 and food traditions`,
-  `responsible governance`,
-  `Circular and
+    des: "",
+  },
+  { name: `responsible governance`, des: "" },
+  {
+    name: `Circular and
 solidarity economy`,
+    des: "",
+  },
 ];
 export const poe = [
   {
