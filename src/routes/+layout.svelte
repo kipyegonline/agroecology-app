@@ -72,5 +72,8 @@
     footer {
       padding: 12px 0;
     }
+    main {
+      padding: 0.25rem;
+    }
   }
 </style>

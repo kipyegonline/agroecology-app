@@ -12,6 +12,7 @@
     );
     appLinks.set(links);
   };
+  const closeMenu = () => setTimeout(() => (openned = false), 200);
 </script>
 
 <section class="!w-screen z-30 block md:hidden">
@@ -20,6 +21,7 @@
       <a href="/">
         <img
           src={logo}
+          on:click={closeMenu}
           alt="SvelteKit"
           class="h-full w-auto max-w-full rounded-lg"
         />
@@ -41,7 +43,7 @@
     style="maximum-height:{openned ? '400px' : '10px'};display:{openned
       ? 'block'
       : 'none'};"
-    on:click={() => setTimeout(() => (openned = false), 200)}
+    on:click={closeMenu}
   >
     <ul
       class="list-none flex flex-col gap-4 mx-auto pb-4"

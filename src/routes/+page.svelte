@@ -38,8 +38,10 @@ life for all involved. `;
 
 <section class="pt-2 md:pt-10">
   <Center>
-    <Text variant="gradient" class=" text-2xl md:text-5xl py-2 my-4" underline
-      >What is Agroecology</Text
+    <Text
+      variant="gradient"
+      class=" text-2xl md:text-5xl py-0 md:py-2 my-4"
+      underline>What is Agroecology</Text
     >
   </Center>
   <Center class="min w-full min-w-60  p-4 border border-cyan-600">
