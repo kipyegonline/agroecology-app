@@ -1,10 +1,10 @@
 <script lang="ts">
-  import { Menu, Text } from "@svelteuidev/core";
+  import { Menu, Text, Burger } from "@svelteuidev/core";
   import { Menu as MenuIcon, X, List } from "lucide-svelte";
   import { appLinks } from "../../store/store";
   import logo from "$lib/images/agroecology_logo.png";
   import { fade } from "svelte/transition";
-  let openned = false;
+  let opened = false;
   let links = $appLinks;
   const handleLinkClick = (link: string) => {
     links = links.map((li) =>
@@ -12,7 +12,7 @@
     );
     appLinks.set(links);
   };
-  const closeMenu = () => setTimeout(() => (openned = false), 200);
+  const closeMenu = () => setTimeout(() => (opened = false), 200);
 </script>
 
 <section class="!w-screen z-30 block md:hidden">
@@ -28,19 +28,11 @@
       </a>
     </div>
 
-    {#if !openned}
-      <button class="h-full inline-block" on:click={() => (openned = true)}
-        ><MenuIcon size={48} /></button
-      >
-    {:else}
-      <button class="h-full" on:click={() => (openned = false)}
-        ><X size={48} /></button
-      >
-    {/if}
+    <Burger {opened} on:click={() => (opened = !opened)} size="xl" />
   </div>
   <div
     class="absolute bg-white w-full z-30 rounded-lg transition-all ease-in-out duration-200"
-    style="maximum-height:{openned ? '400px' : '10px'};display:{openned
+    style="maximum-height:{opened ? '400px' : '10px'};display:{opened
       ? 'block'
       : 'none'};"
     on:click={closeMenu}
