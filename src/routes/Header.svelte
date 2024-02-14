@@ -2,60 +2,20 @@
   import { onMount } from "svelte";
   import { colorScheme } from "@svelteuidev/core";
   import { page } from "$app/stores";
+  import { appLinks } from "../store/store";
   import { Home, Trees, Flower2, Link, Rss, List } from "lucide-svelte";
   //import { MoonIcon as Moon, SunIcon as Sun } from "lucide-svelte";
 
   import logo from "$lib/images/agroecology_logo.png";
   import github from "$lib/images/github.svg";
-  type Link = {
-    name: String;
-    link: string;
-    active: boolean;
-    icon: any;
-  };
-  onMount(() => {
-    alert("mounted");
-  });
+  let links = $appLinks;
+  onMount(() => {});
   const isDark = $colorScheme === "dark";
-
-  let links: Link[] = [
-    { name: "Home", link: "/", active: !false, icon: Home },
-    {
-      name: "Principles of Agroecology",
-      link: "/principles-of-agroecology",
-      active: false,
-      icon: Trees,
-    },
-    {
-      name: "Elements of Agroecology",
-      link: "/elements-of-agroecology",
-      active: false,
-      icon: Flower2,
-    },
-    {
-      name: "Examples",
-      link: "/agroecology-practices", //agroecology-practices
-      active: false,
-      icon: Flower2,
-    },
-    /* {
-      name: "Food holidays",
-      link: "/agroecology-practices",
-      active: false,
-      icon: Flower2,
-    },*/
-    {
-      name: "Related links",
-      link: "/related-links",
-      active: false,
-      icon: Link,
-    },
-    { name: "Blogs", link: "/blogs", active: false, icon: Rss },
-  ];
   const handleLinkClick = (link: string) => {
     links = links.map((li) =>
       li.link === link ? { ...li, active: true } : { ...li, active: false }
     );
+    appLinks.set(links);
   };
 </script>
 
@@ -128,7 +88,6 @@
     --background: rgba(255, 255, 255, 0.7);
     gap: 2rem;
     width: 100%;
-    border: 1px solid cyan;
   }
 
   svg {

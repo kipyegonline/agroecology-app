@@ -2,6 +2,7 @@
   import { agroecology, elements } from "../../components/payload";
 
   let loading = true;
+  let lorem = `  Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui animi, impedit alias soluta suscipit quia deserunt voluptatibus est cupiditate placeat veniam ratione maiores fugit autem quam nemo sed blanditiis ullam?`;
 </script>
 
 <svelte:head>
@@ -11,18 +12,21 @@
 <section class="pt-20">
   <h1 class="">Elements of agroecology</h1>
 
-  <div class="overflow-x-scroll md:overflow-x-auto flex justify-center">
+  <div class="overflow-x-scroll w-full md:overflow-x-auto flex justify-center">
     <table class="table">
       <thead>
-        <tr><th>#</th><th>Element</th></tr>
+        <tr><th>#</th><th>Element</th><th>Description</th></tr>
       </thead>
       <tbody>
         {#each elements as element, i}
           <tr
-            ><th>{i + 1}.</th><th class="text-left capitalize font-medium"
-              >{element.name}</th
-            ></tr
-          >
+            ><td class="font-medium">{i + 1}.</td>
+            <td class="text-left capitalize font-medium w-auto md:w-60"
+              >{element.name}</td
+            ><td class=" px-2 text-justify font-medium"
+              >{element.des.length > 0 ? element.des : lorem}</td
+            >
+          </tr>
         {/each}
       </tbody>
     </table>
@@ -30,7 +34,8 @@
 </section>
 
 <style>
-  th {
+  th,
+  td {
     border: 1px solid #ccc;
     padding: 5px 10px;
     border-collapse: collapse;
@@ -41,7 +46,7 @@
 
   table {
     max-width: 100%;
-    border: 1px solid red;
+
     font-weight: 400;
     background-color: white;
     padding: 10px;

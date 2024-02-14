@@ -1,3 +1,4 @@
+import { Home, Trees, Flower2, Link, Rss, List } from "lucide-svelte";
 import trossard from "$lib/agripics/20230906144424_IMG_0381.JPG";
 import waterBottle from "$lib/agripics/20230906144557_IMG_0385.JPG";
 import storey from "$lib/agripics/20230906145219_IMG_0394.JPG";
@@ -34,4 +35,46 @@ export const agrimages = [
   ],
   [cows, "Green pastures promotes resilient  animal health"],
   [berries, "Growing strawberries on recycled plastic rice bags"],
+];
+
+export type Link = {
+  name: String;
+  link: string;
+  active: boolean;
+  icon: any;
+};
+
+export let links: Link[] = [
+  { name: "Home", link: "/", active: !false, icon: Home },
+  {
+    name: "Principles of Agroecology",
+    link: "/principles-of-agroecology",
+    active: false,
+    icon: Trees,
+  },
+  {
+    name: "Elements of Agroecology",
+    link: "/elements-of-agroecology",
+    active: false,
+    icon: Flower2,
+  },
+  {
+    name: "Examples",
+    link: "/agroecology-practices", //agroecology-practices
+    active: false,
+    icon: Flower2,
+  },
+  /* {
+      name: "Food holidays",
+      link: "/agroecology-practices",
+      active: false,
+      icon: Flower2,
+    },*/
+  {
+    name: "Related links",
+    link: "/related-links",
+    active: false,
+    icon: Link,
+  },
+  { name: "Blogs", link: "/blogs", active: false, icon: Rss },
 ];

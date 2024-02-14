@@ -8,11 +8,15 @@
   } from "@svelteuidev/core";
   import Header from "./Header.svelte";
   import "./styles.css";
+  import MobileMenu from "$components/MobileMenu/MobileMenu.svelte";
 </script>
 
 <div class="app">
   <AppShell>
-    <Navbar class=" p-2 h-auto " width={{ base: "100%" }}><Header /></Navbar>
+    <Navbar class=" p-2 h-auto hidden md:block " width={{ base: "100%" }}
+      ><Header /></Navbar
+    >
+    <MobileMenu />
     <SvelteUIProvider
       class="border--400 border container"
       withNormalizeCSS

@@ -1,6 +1,6 @@
 import { writable, type Writable } from "svelte/store";
 import { poe } from "../components/payload";
-import { agrimages } from "./payload.assets";
+import { agrimages, links, type Link } from "./payload.assets";
 export const user: Writable<null | {
   name: string;
   age: number;
@@ -25,3 +25,4 @@ let _organic2 =
 
 export const principlesofAgroEcology: Writable<POE[]> = writable(poe);
 export const agripics: Writable<Array<string>> = writable(agrimages);
+export const appLinks: Writable<Link[]> = writable(links);
