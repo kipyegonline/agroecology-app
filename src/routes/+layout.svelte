@@ -9,6 +9,8 @@
   import Header from "./Header.svelte";
   import "./styles.css";
   import MobileMenu from "$components/MobileMenu/MobileMenu.svelte";
+
+  let bgStyles = "";
 </script>
 
 <div class="app">

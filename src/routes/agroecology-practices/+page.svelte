@@ -102,7 +102,7 @@ valuable nutrients to the soil and improve soil structure.`,
   let current = examples[0]?.name || "";
 </script>
 
-<section class="p-4 pt-20">
+<section class="pt-4 md:pt-20 m-2 md:m-4">
   <h3 class="text-center text-2xl">Agroecological practices</h3>
   <Accordion
     value={current}

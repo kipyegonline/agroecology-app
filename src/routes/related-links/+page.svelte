@@ -100,11 +100,11 @@
 </script>
 
 <svelte:head>
-  <title>Home| Agroecology app | related links</title>
+  <title>Home| Agroecology app | related links and resources</title>
   <meta name="description" content=" Agroecology resources" />
 </svelte:head>
 
-<section class="pt-20 border-red">
+<section class="pt-4 md:pt-20 m-2 md:m-4">
   <ul class="flex gap-2 flex-col">
     {#if links}
       {#each links as link, i (link.link)}

@@ -9,7 +9,7 @@
   <title>Agroecology|Elements of agroecology</title>
   <meta name="description" content="Elements of Agroecology" />
 </svelte:head>
-<section class="pt-20">
+<section class="pt-4 md:pt-20 m-2 md:m-4">
   <h1 class="">Elements of agroecology</h1>
 
   <div class="overflow-x-scroll w-full md:overflow-x-auto flex justify-center">

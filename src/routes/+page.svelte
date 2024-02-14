@@ -4,8 +4,16 @@
   import { onMount } from "svelte";
   import { user, principlesofAgroEcology } from "../store/store";
   import Card from "../components/Card/Card.svelte";
-  import { Box, Text, Center, Card as SvelteCard } from "@svelteuidev/core";
+  import {
+    Box,
+    Text,
+    Center,
+    Card as SvelteCard,
+    Image,
+  } from "@svelteuidev/core";
   import { agroecology } from "$components/payload";
+  import bg from "$lib/agripics/20231206112701_IMG_5391.JPG";
+  import bg2 from "$lib/agripics/20230908153132_IMG_0882.JPG";
   let title = "";
 
   let orgdef = `Organic farming is a production
@@ -28,20 +36,27 @@ life for all involved. `;
 </svelte:head>
 <!--what is agroecology-->
 
-<section class="pt-10">
+<section class="pt-2 md:pt-10">
   <Center>
     <Text variant="gradient" class=" text-2xl md:text-5xl py-2 my-4" underline
       >What is Agroecology</Text
     >
   </Center>
   <Center class="min w-full min-w-60  p-4 border border-cyan-600">
-    <SvelteCard class="p-4 rounded-lg">
-      <Text
-        size="lg"
-        class="leading-6 text-justify first-letter:text-4xl first-letter:font-medium first-letter:text-green-600"
-        >{agroecology}</Text
-      ></SvelteCard
+    <SvelteCard
+      class="p-4 rounded-lg flex flex-col md:flex-row gap-4 justify-between"
     >
+      <Box class="w-full md:w-1/2 p-4">
+        <Text
+          size="md"
+          class="leading-7 text-justify first-letter:text-4xl first-letter:font-medium first-letter:text-green-600"
+          >{agroecology}</Text
+        ></Box
+      >
+      <Box class="w-full md:w-1/2 rounded-lg -order-1 md:order-0">
+        <Image src={bg} />
+      </Box>
+    </SvelteCard>
   </Center>
   <!--organic farming-->
   <Center>
@@ -50,22 +65,31 @@ life for all involved. `;
     >
   </Center>
   <Center class="min w-full min-w-60  p-4 border border-cyan-600">
-    <SvelteCard class="p-4 rounded-lg">
-      <Text
-        size="lg"
-        class="leading-6 hidden text-justify first-letter:text-4xl first-letter:font-medium first-letter:text-green-600"
-        >Organic farming is a system of agriculture that prioritizes natural
-        processes and ecological balance over the use of synthetic chemicals. It
-        aims to produce food and other agricultural products in a way that is
-        <b
-          >sustainable and minimizes harm to the environment and human health.</b
-        ></Text
+    <SvelteCard
+      class="p-4 rounded-lg flex flex-col md:flex-row gap-4 justify-between"
+    >
+      <Box class="w-full md:w-1/2 p-4">
+        <Text
+          size="lg"
+          class="leading-6 hidden text-justify first-letter:text-4xl first-letter:font-medium first-letter:text-green-600"
+          >Organic farming is a system of agriculture that prioritizes natural
+          processes and ecological balance over the use of synthetic chemicals.
+          It aims to produce food and other agricultural products in a way that
+          is
+          <b
+            >sustainable and minimizes harm to the environment and human health.</b
+          ></Text
+        >
+        <Text
+          size="md"
+          class="leading-8 text-justify first-letter:text-4xl first-letter:font-medium first-letter:text-green-600"
+          >{orgdef}</Text
+        ></Box
       >
-      <Text
-        size="lg"
-        class="leading-6 text-justify first-letter:text-4xl first-letter:font-medium first-letter:text-green-600"
-        >{orgdef}</Text
-      >
+
+      <Box class="w-full md:w-1/2 rounded-l -order-1 md:order-0">
+        <Image src={bg2} />
+      </Box>
     </SvelteCard>
   </Center>
   <!--characteristics-->

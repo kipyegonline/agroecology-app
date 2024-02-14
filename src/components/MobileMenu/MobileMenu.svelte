@@ -3,6 +3,7 @@
   import { Menu as MenuIcon, X, List } from "lucide-svelte";
   import { appLinks } from "../../store/store";
   import logo from "$lib/images/agroecology_logo.png";
+  import { fade } from "svelte/transition";
   let openned = false;
   let links = $appLinks;
   const handleLinkClick = (link: string) => {
@@ -42,7 +43,10 @@
       : 'none'};"
     on:click={() => setTimeout(() => (openned = false), 200)}
   >
-    <ul class="list-none flex flex-col gap-4 mx-auto pb-4">
+    <ul
+      class="list-none flex flex-col gap-4 mx-auto pb-4"
+      transition:fade={{ delay: 250, duration: 300 }}
+    >
       {#each links as { active, link, name, icon }}
         <li class="text-xl mx-auto">
           <a class:active on:click={() => handleLinkClick(link)} href={link}>

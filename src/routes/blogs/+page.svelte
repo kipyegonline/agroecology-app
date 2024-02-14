@@ -7,7 +7,7 @@
   <title>Agroecology|Blogs</title>
   <meta name="description" content="Elements of Agroecology" />
 </svelte:head>
-<section class="pt-20 m-4">
+<section class="pt-4 md:pt-20 m-2 md:m-4">
   <div class="flex flex-col flex-wrap gap-4">
     {#each $agripics as [a, b]}
       <Center class=" ">
