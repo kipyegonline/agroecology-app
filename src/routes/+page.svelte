@@ -94,10 +94,17 @@ life for all involved. `;
       </Box>
     </SvelteCard>
   </Center>
+
   <!--characteristics-->
+  <Center>
+    <Text>Benefits of Agroecology</Text>
+  </Center>
   <!--Benefits-->
   <!---Examples->
 <!- principles and elements-->
+  <Center>
+    <Text>Benefits of organic farming</Text>
+  </Center>
 </section>
 
 <style>
