@@ -44,7 +44,7 @@ life for all involved. `;
       underline>What is Agroecology</Text
     >
   </Center>
-  <Center class="min w-full min-w-60  p-4 border border-cyan-600">
+  <Center class="min w-full min-w-60  p-4 border ">
     <SvelteCard
       class="p-4 rounded-lg flex flex-col md:flex-row gap-4 justify-between"
     >
@@ -66,7 +66,7 @@ life for all involved. `;
       >What is organic farming</Text
     >
   </Center>
-  <Center class="min w-full min-w-60  p-4 border border-cyan-600">
+  <Center class="min w-full min-w-60  p-4 ">
     <SvelteCard
       class="p-4 rounded-lg flex flex-col md:flex-row gap-4 justify-between"
     >
@@ -95,16 +95,16 @@ life for all involved. `;
     </SvelteCard>
   </Center>
 
-  <!--characteristics-->
+  <!--characteristics--
   <Center>
     <Text>Benefits of Agroecology</Text>
   </Center>
-  <!--Benefits-->
+  --Benefits-->
   <!---Examples->
-<!- principles and elements-->
+<!- principles and elements-
   <Center>
     <Text>Benefits of organic farming</Text>
-  </Center>
+  </Center>-->
 </section>
 
 <style>

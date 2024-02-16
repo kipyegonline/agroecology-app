@@ -15,7 +15,7 @@
 
 <div class="app">
   <AppShell>
-    <Navbar class=" p-2 h-auto hidden md:block " width={{ base: "100%" }}
+    <Navbar class=" p-2 h-16 !hidden md:block " width={{ base: "100%" }}
       ><Header /></Navbar
     >
     <MobileMenu />
@@ -25,7 +25,7 @@
       withGlobalStyles
       themeObserver={$colorScheme}
     >
-      <main class=" border-green-400 border">
+      <main class=" border-greens-400 borders">
         <slot />
       </main>
     </SvelteUIProvider>
