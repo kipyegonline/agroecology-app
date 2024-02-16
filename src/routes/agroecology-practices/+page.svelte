@@ -96,14 +96,12 @@ the microclimate`,
 and their roots prevent soil erosion. When dug into the ground while still green, they return
 valuable nutrients to the soil and improve soil structure.`,
     },
-    { name: "", des: `` },
-    { name: "", des: `` },
   ];
   let current = examples[0]?.name || "";
 </script>
 
 <section class="pt-4 md:pt-20 m-2 md:m-4">
-  <h3 class="text-center text-2xl">Agroecological practices</h3>
+  <h3 class="text-center !text-2xl">Agroecological practices</h3>
   <Accordion
     value={current}
     on:change={(e) => (current = e.detail)}

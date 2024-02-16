@@ -23,7 +23,7 @@
 </svelte:head>
 
 <section class="pt-4 md:pt-20 m-2 md:m-4">
-  <Text variant="gradient" class=" text-2xl md:text-5xl py-2 my-4" underline
+  <Text variant="gradient" class=" !text-2xl md:!text-5xl py-2 my-4" underline
     >Principles of Agroecology</Text
   >
 

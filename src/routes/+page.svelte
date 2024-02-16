@@ -40,7 +40,7 @@ life for all involved. `;
   <Center>
     <Text
       variant="gradient"
-      class=" text-2xl md:text-5xl py-0 md:py-2 my-4"
+      class=" !text-2xl md:!text-5xl py-0 md:py-2 my-4"
       underline>What is Agroecology</Text
     >
   </Center>
@@ -62,7 +62,7 @@ life for all involved. `;
   </Center>
   <!--organic farming-->
   <Center>
-    <Text variant="gradient" class=" text-2xl md:text-5xl py-2 my-4" underline
+    <Text variant="gradient" class=" !text-2xl md:!text-5xl py-2 my-4" underline
       >What is organic farming</Text
     >
   </Center>
