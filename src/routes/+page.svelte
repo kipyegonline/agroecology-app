@@ -46,12 +46,12 @@ life for all involved. `;
   </Center>
   <Center class="min w-full min-w-60  p-4 border ">
     <SvelteCard
-      class="p-4 rounded-lg flex flex-col md:flex-row gap-4 justify-between"
+      class="p-4 rounded-lg !flex flex-col md:flex-row gap-4 justify-between"
     >
       <Box class="w-full md:w-1/2 p-4">
         <Text
           size="md"
-          class="leading-7 text-justify first-letter:text-4xl first-letter:font-medium first-letter:text-green-600"
+          class="!leading-7 text-justify first-letter:text-4xl first-letter:font-medium first-letter:text-green-600"
           >{agroecology}</Text
         ></Box
       >
@@ -68,12 +68,12 @@ life for all involved. `;
   </Center>
   <Center class="min w-full min-w-60  p-4 ">
     <SvelteCard
-      class="p-4 rounded-lg flex flex-col md:flex-row gap-4 justify-between"
+      class="p-4 rounded-lg !flex flex-col md:flex-row gap-4 justify-between"
     >
       <Box class="w-full md:w-1/2 p-4">
         <Text
           size="lg"
-          class="leading-6 hidden text-justify first-letter:text-4xl first-letter:font-medium first-letter:text-green-600"
+          class="!leading-6 hidden text-justify first-letter:text-4xl first-letter:font-medium first-letter:text-green-600"
           >Organic farming is a system of agriculture that prioritizes natural
           processes and ecological balance over the use of synthetic chemicals.
           It aims to produce food and other agricultural products in a way that
@@ -84,7 +84,7 @@ life for all involved. `;
         >
         <Text
           size="md"
-          class="leading-8 text-justify first-letter:text-4xl first-letter:font-medium first-letter:text-green-600"
+          class="!leading-8 text-justify first-letter:text-4xl first-letter:font-medium first-letter:text-green-600"
           >{orgdef}</Text
         ></Box
       >
@@ -112,7 +112,7 @@ life for all involved. `;
     background: purple;
   }
   section {
-    display: flex;
+    display: flex !important;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -126,7 +126,7 @@ life for all involved. `;
   .principles {
     list-style: none;
     padding: 5px 0;
-    display: flex;
+    display: flex !important;
     flex-wrap: wrap;
     justify-content: flex-start;
     gap: 2rem;
