@@ -8,21 +8,20 @@
   } from "@svelteuidev/core";
   import Header from "./Header.svelte";
   import "./styles.css";
+import {onMount} from "svelte"
   import MobileMenu from "$components/MobileMenu/MobileMenu.svelte";
-
-
-  let bgStyles = "";
- 
-</script>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-1466RY5B8K"></script>
-<script>
+onMount(()=>{
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
 
-  gtag('config', 'G-1466RY5B8K');
+  gtag('config', 'G-1466RY5B8K')
+})
+
+  let bgStyles = "";
+ 
 </script>
+
 
 <div class="app">
   <AppShell>
