@@ -16,7 +16,7 @@
 </script>
 
 <section class="!w-screen z-30 block md:hidden">
-  <div class="flex justify-between h-20 p-2 relative pb-2 mr-3">
+  <div class="flex justify-between h-16 p-2 relative pb-2 mr-3">
     <div class="">
       <a href="/">
         <img
@@ -28,7 +28,7 @@
       </a>
     </div>
 
-    <Burger {opened} on:click={() => (opened = !opened)} size="xl" />
+    <Burger {opened} on:click={() => (opened = !opened)} size="lg" />
   </div>
   <div
     class="absolute bg-white w-full z-30 rounded-lg transition-all ease-in-out duration-200"

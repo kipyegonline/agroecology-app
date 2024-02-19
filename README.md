@@ -1,16 +1,34 @@
-### Agroecoloy app
+### Welcome to Agroecology app
 
-This app is an info site for agroecology, its elements and principles and blogs
+This a web app focusing on Agroecology- an approach in agriculture that seeks for food production processes and practices sustainable to people,environment and animals.
 
-site:https://lever.co | site:https://greenhouse.io | site:https://jobs.ashbyhq.com | site:https://weworkremotely.com (developer | engineer)"hybrid" "react" after:2024-02-04
+The application lists elements, principles,examples and blogs on agroecology.
 
-site:http://lever.co | site:http://greenhouse.io | site:http://glassdoor.com | site:https://uk.indeed.com | site:https://weworkremotely.com (developer | engineer) "remote " "Rotterdam" "javascript" after:2024-02-04
-site:http://lever.co | site:http://greenhouse.io | site:http://glassdoor.com | site:https://uk.indeed.com (developer | engineer) "remote " "The Hague" "react" "javascript" "typescript" after:2024-02-04
-site:http://lever.co | site:http://greenhouse.io | site:http://glassdoor.com | site:https://uk.indeed.com (developer | engineer)"remote " "Utrecht" "react" "javascript" "typescript" after:2024-02-04
-site:http://lever.co | site:http://greenhouse.io | site:http://glassdoor.com | site:https://uk.indeed.com (developer | engineer)"remote" "Eindhoven" "react" "javascript" "typescript" after:2024-02-04
-site:http://lever.co | site:http://greenhouse.io | site:http://glassdoor.com | site:https://uk.indeed.com (developer | engineer) "Nairobi" "react" "javascript" "typescript" after:2024-02-04
+### setup
 
-Amsterdam, Rotterdam, The Hague, Utrecht, and Eindhoven
-site:http://lever.co | site:http://greenhouse.io | site:http://glassdoor.com | site:https://uk.indeed.com (developer | engineer)"relocation " "London" "python" after:2022-11-17
-https://weworkremotely.com/
-https://grocycle.com/what-is-agroecology/
+This a svelte app set up via svelte kit.
+
+### Installation
+
+Clone the application on [github](https://github.com/agroecology-app)  
+To install app run
+`npm create svelte@latest`
+
+Run development mode
+`npm run dev`
+
+To build app, run
+
+`npm run build`
+
+### Deployment
+
+The application is deplyed to Vercel on push; CI/CD
+
+### contributions
+
+Contributions are welcome; clone the project and create PR
+
+### Issues
+
+Issue cam created [here](https://github.com/agroecology-app/issues)
