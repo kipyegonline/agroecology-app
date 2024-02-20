@@ -57,15 +57,15 @@ food production systems to a more sustainable and resilient food production syst
           <Text
             size="md"
             class={i === 0
-              ? firstLetter + "!leading-7 text-justify "
-              : " !leading-7 text-justify "}>{para}.</Text
+              ? firstLetter + " !leading-7 text-left md:text-justify "
+              : " !leading-7 text-left md:text-justify "}>{para}.</Text
           >
         {/each}
         <Box>
           <Text class="text-center font-semibold" size="md"
             >Why Agroecology</Text
           >
-          <Text size="md" class="!leading-5 py-2">{whyAgro}</Text>
+          <Text size="md" class="!leading-7 py-2">{whyAgro}</Text>
         </Box>
       </Box>
       <Box class="w-full md:w-1/2 rounded-lg -order-1 md:order-0">
@@ -100,8 +100,8 @@ food production systems to a more sustainable and resilient food production syst
             size="md"
             class={i === 0
               ? firstLetter +
-                "!leading-7 text-justify first-letter:text-green-600 "
-              : " !leading-7 text-justify "}>{org}</Text
+                " !leading-7 text-left md:text-justify first-letter:text-green-600 "
+              : " !leading-7 text-left md:text-justify "}>{org}</Text
           >
         {/each}
       </Box>
@@ -113,13 +113,13 @@ food production systems to a more sustainable and resilient food production syst
   </Center>
 
   <!--characteristics-->
-  <Center>
+  <Center class="hidden">
     <Text>Benefits of Agroecology</Text>
   </Center>
   <!--Benefits-->
   <!---Examples->
 <!- principles and elements-->
-  <Center>
+  <Center class="hidden">
     <Text>Benefits of organic farming</Text>
   </Center>
 </section>

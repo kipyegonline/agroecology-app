@@ -118,7 +118,7 @@
   <ul class="flex gap-2 flex-col">
     {#if links}
       {#each links as link, i (link.link)}
-        <li class="p-4 bg-white rounded-lg min-h-4">
+        <li class="p-2 md:p-4 bg-white rounded-lg min-h-4">
           <a href={link.link} target="_blank" on:click={handleClick(link)}>
             <div>
               <p>

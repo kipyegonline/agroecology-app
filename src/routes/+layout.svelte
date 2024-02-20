@@ -28,13 +28,13 @@
       <main class=" border-greens-400 borders">
         <slot />
       </main>
+      <Footer
+        height={60}
+        class="bg-green-700 text-white flex items-center justify-center fixed bottom-0 w-full"
+      >
+        <p>All rights Reserved &copy; {new Date().getFullYear()}</p>
+      </Footer>
     </SvelteUIProvider>
-    <Footer
-      height={60}
-      class="bg-green-700 text-white flex items-center justify-center fixed bottom-0"
-    >
-      <p>All rights Reserved &copy; {new Date().getFullYear()}</p>
-    </Footer>
   </AppShell>
 </div>
 
