@@ -24,6 +24,16 @@
   });
   let defaultLinks = [
     {
+      name: "The Organic Farmer (magazine,radio,articles,Mkulima Mbunifu,videos) ",
+      des: "",
+      link: "https://theorganicfarmer.org/",
+    },
+    {
+      name: "Biovision Infonet System",
+      des: "",
+      link: "https://www.infonet-biovision.org",
+    },
+    {
       name: "PUBLIC CONSULTATION FEEDBACK ON THE DRAFT NATIONAL AGROECOLOGY STRATEGY FOR FOOD SYSTEM TRANSFORMATION",
       des: "",
       link: "https://kilimo.go.ke/public-consultation-feedback-on-the-draft-national-agroecology-strategy-for-food-system-transformation-2/",

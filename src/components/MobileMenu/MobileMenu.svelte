@@ -13,6 +13,7 @@
     appLinks.set(links);
   };
   const closeMenu = () => setTimeout(() => (opened = false), 200);
+  let activeMenu = links[0];
 </script>
 
 <section class="!w-screen z-30 block md:hidden">
@@ -59,5 +60,9 @@
   }
   .active {
     cursor: pointer;
+    background: green;
+    color: white;
+    width: 100%;
+    padding: 0.25rem 0.75rem;
   }
 </style>

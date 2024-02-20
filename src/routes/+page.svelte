@@ -25,6 +25,10 @@ Organic agriculture combines tradition, innovation
 and science to benefit the shared environment and
 promote fair relationships and a good quality of
 life for all involved. `;
+  let whyAgro = `Agroecology seeks to transform existing
+food production systems to a more sustainable and resilient food production system.`;
+  let firstLetter =
+    "first-letter:text-4xl first-letter:font-medium first-letter:text-green-600";
 </script>
 
 <svelte:head>
@@ -40,21 +44,30 @@ life for all involved. `;
   <Center>
     <Text
       variant="gradient"
-      class=" !text-2xl md:!text-5xl py-0 md:py-2 my-4"
+      class=" !text-2xl md:!text-5xl py-0 md:py-2 my-2 md:my-4"
       underline>What is Agroecology</Text
     >
   </Center>
-  <Center class="min w-full min-w-60  p-4 border ">
+  <Center class="min w-full min-w-60  p-4  ">
     <SvelteCard
       class="p-4 rounded-lg !flex flex-col md:flex-row gap-4 justify-between"
     >
       <Box class="w-full md:w-1/2 p-4">
-        <Text
-          size="md"
-          class="!leading-7 text-justify first-letter:text-4xl first-letter:font-medium first-letter:text-green-600"
-          >{agroecology}</Text
-        ></Box
-      >
+        {#each agroecology.split(".") as para, i}
+          <Text
+            size="md"
+            class={i === 0
+              ? firstLetter + "!leading-7 text-justify "
+              : " !leading-7 text-justify "}>{para}.</Text
+          >
+        {/each}
+        <Box>
+          <Text class="text-center font-semibold" size="md"
+            >Why Agroecology</Text
+          >
+          <Text size="md" class="!leading-5 py-2">{whyAgro}</Text>
+        </Box>
+      </Box>
       <Box class="w-full md:w-1/2 rounded-lg -order-1 md:order-0">
         <Image src={bg} />
       </Box>
@@ -82,12 +95,16 @@ life for all involved. `;
             >sustainable and minimizes harm to the environment and human health.</b
           ></Text
         >
-        <Text
-          size="md"
-          class="!leading-8 text-justify first-letter:text-4xl first-letter:font-medium first-letter:text-green-600"
-          >{orgdef}</Text
-        ></Box
-      >
+        {#each orgdef.split(".") as org, i}
+          <Text
+            size="md"
+            class={i === 0
+              ? firstLetter +
+                "!leading-7 text-justify first-letter:text-green-600 "
+              : " !leading-7 text-justify "}>{org}</Text
+          >
+        {/each}
+      </Box>
 
       <Box class="w-full md:w-1/2 rounded-l -order-1 md:order-0">
         <Image src={bg2} />
