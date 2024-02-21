@@ -71,10 +71,47 @@ export let links: Link[] = [
       icon: Flower2,
     },*/
   {
-    name: "Related links",
+    name: "Resources",
     link: "/related-links",
     active: false,
     icon: Link,
   },
   { name: "Blogs", link: "/blogs", active: false, icon: Rss },
+];
+
+export const challenges = [
+  [
+    "Fragile agri-food systems",
+    `declining productivity in both crop and livestock;
+degradation of land, water, soils and other ecosystems supporting agricultural production; loss of
+indigenous varieties and genetic resources for crop and animal production; rising impacts of climate
+change; declining biodiversity for food and agriculture; poor fertilizer yield response due to rising soil
+acidity; limited awareness of the potential of agroecology in supporting the much needed food system
+transformation; limited availability and access to bio inputs by smallholder farmers; and Limited market
+incentives and innovations to support the agroecological transition`,
+  ],
+  [
+    `Limited access to and consumption of safe, diversified, and healthy diets leads to food
+insecurity and malnutrition.`,
+    `The trend is associated with shifts in consumer preferences in favor
+of ultra-processed foods; the direct effects of food marketing exposure; poorly coordinated food
+markets leading to high food prices and limited access and availability of traditional foods due to
+cultural shifts focus on production for the market. Inefficient food supply chains and markets are
+characterized by high transaction costs; increased costs in logistics; information asymmetries and long
+value chains which increase the carbon footprint. The rising burden of foodborne diseases; increasing
+incidences of food contamination; high levels of food loss and waste and low levels of circularity for
+the management of waste are also major issues facing Kenya’s food systems.`,
+  ],
+  [
+    `Weak policy and institutional environment / and incentives for supporting agroecology
+transitioning and scaling up`,
+    `limited mainstreaming of agroecology and other
+innovative-sustainable practices into existing national and county policies and strategies; lack of long-
+term financing that is compatible with longer-term investments in agroecology; inability of smallholder
+farmers, communities and counties to tap existing funding opportunities for agroecology and
+disproportionate financing of small-scale agriculture relative to the importance of agriculture for
+developing countries’ GDP. Equally, a lion's share of public budgets for climate, agriculture and
+development still goes to conventional agro-industrial projects that contribute to the current climate,
+food and biodiversity crises.`,
+  ],
 ];

@@ -22,7 +22,7 @@
       <a href="/">
         <img
           src={logo}
-          on:click={closeMenu}
+          on:click={()=>{closeMenu();handleLinkClick("/")}}
           alt="SvelteKit"
           class="h-full w-auto max-w-full rounded-lg"
         />
