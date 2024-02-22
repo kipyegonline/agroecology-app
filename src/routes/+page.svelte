@@ -73,6 +73,31 @@ food production systems to a more sustainable and resilient food production syst
       </Box>
     </SvelteCard>
   </Center>
+  <!--Benefits-->
+  <Text class=" !text-2xl md:!text-5xl py-2 my-4" variant="gradient"
+    >Benefits of Agroecology</Text
+  >
+  <Center class="w-full">
+    <SvelteCard class="p-4 flex flex-col gap-4">
+      <Text
+        ><b>Increased Food security</b> by improving soil fertility and cro yields
+        leading to increased food production.</Text
+      >
+      <Text
+        ><b>Improved environmental health</b> by reducing greenhouse gas emissions,conserving
+        water and protect biodiversity.</Text
+      >
+      <Text
+        ><b>Enhanced farmer livelihoods</b> through increased farmer income and improved
+        working conditons.</Text
+      >
+
+      <Text
+        ><b>Greater resilience</b> - Agroecological systems are better able to withstand
+        climate change,pests and diseases.</Text
+      >
+    </SvelteCard>
+  </Center>
   <!--organic farming-->
   <Center>
     <Text variant="gradient" class=" !text-2xl md:!text-5xl py-2 my-4" underline
@@ -110,17 +135,6 @@ food production systems to a more sustainable and resilient food production syst
         <Image src={bg2} />
       </Box>
     </SvelteCard>
-  </Center>
-
-  <!--characteristics-->
-  <Center class="hidden">
-    <Text>Benefits of Agroecology</Text>
-  </Center>
-  <!--Benefits-->
-  <!---Examples->
-<!- principles and elements-->
-  <Center class="hidden">
-    <Text>Benefits of organic farming</Text>
   </Center>
 </section>
 
