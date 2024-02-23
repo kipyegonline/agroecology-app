@@ -52,22 +52,46 @@ diversity, with surrounding forest resource biodiversity, insect biodiversity, s
 biodiversity, plant and animal genetic diversity, habitat diversity, and the related diversities
 of culture and knowledge`,
   },
-  { name: `co-creation of knowledge`, des: "" },
-  { name: `Synergies`, des: "" },
-  { name: `efficiency`, des: "" },
-  { name: `recycling`, des: "" },
-  { name: `resilience`, des: "" },
-  { name: `human and social values`, des: "" },
+  {
+    name: `co-creation of knowledge`,
+    des: ` This entails blending indigenous and traditional knowledge with traders’ and producers’ knowledge and global scientific knowledge.
+
+It involves encouraging encouraging participatory processes and institutional innovations that develop mutual trust enables sharing knowledge and co-creation that contributes to relevant agroecological processes.`,
+  },
+  {
+    name: `Synergies`,
+    des: `Developing synergies help enhance key functions across food systems and support the production and multiple ecosystem services. Synergy in the ecosystem improves crop yield, weed control,pest control,biodiversity and improved soil structure`,
+  },
+  {
+    name: `efficiency`,
+    des: "Efficiency is achieved through minimizing farm input and mechanization and instead integrating existing ecological functions such as recycling,water harvesting and protecting biodiversity.",
+  },
+  {
+    name: `recycling`,
+    des: "Recycling of waste ensure that nutrients is absorbed back to the environment and build up on ecological synergy of the environment. Recycling also entails minimizing pollution, protection of biomass and promoting environment synergies. ",
+  },
+  {
+    name: `resilience`,
+    des: `Agroecology enhances the resilience of communities, people, and ecosystems to sustain food and agricultural systems. Agroecology practices ensures the systems are reslient to pest attacks and diseases. It also enhance socio-economic resilience`,
+  },
+  {
+    name: `human and social values`,
+    des: `Agroecology emphasizes human and social values, including equity, dignity, justice, and inclusion, which contribute to improved livelihoods.`,
+  },
   {
     name: `Culture
 and food traditions`,
-    des: "",
+    des: `Agroecology contributes to food nutrition and security while maintaining the health of the ecosystem when healthy, diversified, and culturally appropriate diets are supported. 
+    It rebalances modern and traditional food habits and brings them together to promote healthy food production and consumption`,
   },
-  { name: `responsible governance`, des: "" },
+  {
+    name: `responsible governance`,
+    des: `An accountable, transparent, and inclusive governance system is essential in creating an enabling environment that supports producers to transition their systems to agroecological practices and concept`,
+  },
   {
     name: `Circular and
 solidarity economy`,
-    des: "",
+    des: `Agroecology reconnects producers and consumers through a circular and solidarity economy, prioritizing local markets and supporting local economic developments`,
   },
 ];
 export const poe = [

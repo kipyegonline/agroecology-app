@@ -1,4 +1,5 @@
 <script lang="ts">
+  import { Text } from "@svelteuidev/core";
   import { agroecology, elements } from "../../components/payload";
 
   let loading = true;
@@ -10,7 +11,10 @@
   <meta name="description" content="Elements of Agroecology" />
 </svelte:head>
 <section class="pt-4 md:pt-20 m-2 md:m-4">
-  <h1 class="">Elements of agroecology</h1>
+  <Text
+    class=" !text-2xl md:!text-5xl py-0 md:py-2 my-2 md:my-4 text-center"
+    variant="gradient">Elements of agroecology</Text
+  >
 
   <div class="overflow-x-scroll w-full md:overflow-x-auto flex justify-center">
     <table class="table">

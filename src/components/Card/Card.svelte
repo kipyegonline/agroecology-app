@@ -36,7 +36,7 @@
     /></Center
   >
 
-  <Text class="leading-6 text-justify text-base mb-4">{p.description}</Text>
+  <Text class="!leading-6 text-justify text-base mb-4">{p.description}</Text>
 
   <Center class=" flex gap-4  text-xl absolute left-0 right-0 bottom-2  ">
     {#each p.categories as cat}

@@ -14,7 +14,9 @@
   import { agroecology } from "$components/payload";
   import bg from "$lib/agripics/20231206112701_IMG_5391.JPG";
   import bg2 from "$lib/agripics/20230908153132_IMG_0882.JPG";
+  import tea from "$lib/agripics/20240110115442_IMG_6741.JPG";
   let title = "";
+  let nat = "National Agroecology for Food System Transformation Strategy";
 
   let orgdef = `Organic farming is a production
 system that sustains the health of soils, ecosystems
@@ -78,24 +80,31 @@ food production systems to a more sustainable and resilient food production syst
     >Benefits of Agroecology</Text
   >
   <Center class="w-full">
-    <SvelteCard class="p-4 flex flex-col gap-4">
-      <Text
-        ><b>Increased Food security</b> by improving soil fertility and cro yields
-        leading to increased food production.</Text
+    <SvelteCard class="p-4 flex flex-col md:flex-row gap-4">
+      <Box
+        class=" flex flex-col items-center  gap-4 w-full md:w-1/2 rounded-lg "
       >
-      <Text
-        ><b>Improved environmental health</b> by reducing greenhouse gas emissions,conserving
-        water and protect biodiversity.</Text
-      >
-      <Text
-        ><b>Enhanced farmer livelihoods</b> through increased farmer income and improved
-        working conditons.</Text
-      >
+        <Text size="md" class="text-lg"
+          ><b>Increased Food security</b> by improving soil fertility and crop yields
+          leading to increased food production.</Text
+        >
+        <Text size="md" class="text-lg"
+          ><b>Improved environmental health</b> by reducing greenhouse gas emissions,conserving
+          water and protect biodiversity.</Text
+        >
+        <Text size="md" class="text-lg"
+          ><b>Enhanced farmer livelihoods</b> through increased farmer income and
+          improved working conditons.</Text
+        >
 
-      <Text
-        ><b>Greater resilience</b> - Agroecological systems are better able to withstand
-        climate change,pests and diseases.</Text
+        <Text size="md" class="text-lg"
+          ><b>Greater resilience</b> - Agroecological systems are better able to
+          withstand climate change,pests and diseases.</Text
+        ></Box
       >
+      <Box class="w-full md:w-1/2 rounded-lg -order-1 md:order-0">
+        <img src={tea} alt="" />
+      </Box>
     </SvelteCard>
   </Center>
   <!--organic farming-->

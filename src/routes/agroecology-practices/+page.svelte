@@ -1,9 +1,9 @@
 <script>
-  import { Accordion } from "@svelteuidev/core";
+  import { Accordion, Text } from "@svelteuidev/core";
   let examples = [
     {
       name: "Minimum tillage",
-      des: `no or minimum tillage
+      des: `No or minimum tillage
 improves soil structure, including aeration and water
 infiltration and retention capacity  and organic matter`,
     },
@@ -47,37 +47,37 @@ chemical fertilisers`,
     {
       name: `Biological management of pests, diseases and
 weeds`,
-      des: `, such as integrated pest management, push
+      des: `, Through integrated pest management, push
 and pull methods and allelopathy: decrease long-term
 incidence of pests and reduce environmental and
 health hazards caused by the use of chemical control`,
     },
     {
       name: "Efficient water harvesting ",
-      des: `(especially in dryland
+      des: ` Water harvesting methods(especially in dryland
 areas) such as small-scale irrigation allows to reduce
 the need for irrigation while increasing its efficiency`,
     },
     {
       name: `Manipulation of vegetation structure and plant
 associations`,
-      des: `: improves efficiency of water use as well
+      des: ` This improves efficiency of water use as well
 as promoting biodiversity`,
     },
     {
       name: `Use of local resources and renewable energy
 sources:`,
       des: `
-allows a reduction in the use of external inputs as well
+This allows a reduction in the use of external inputs as well
 diminishing pressure on the natural resource base`,
     },
     {
-      name: "composting and waste recycling",
-      des: "Recycling organic waste to create nutrient-rich compost for soil ammendment",
+      name: "Composting and waste recycling",
+      des: "Recycling organic waste to create nutrient-rich compost for soil ammendment,improve soil structure  and soil aeration",
     },
     {
       name: "Holistic landscape management",
-      des: ` around field
+      des: ` Around field
 perimeters (windbreaks, shelterbelts, insect strips and
 living fences), across multiple fields (mosaics of crop
 types and land-use practices) and at the landscape-
@@ -85,7 +85,7 @@ to-regional scale (river buffers, woo`,
     },
     {
       name: "Agro-forestry",
-      des: `, especially the use of multifunctional
+      des: ` Agroforestry can be achieved especially through the use of multifunctional
 trees: provides shade,wind breakers,habitat for beneficial insects, maintains and improves soil fertility through
 nitrogen fixation, enhances soil structure and modifies
 the microclimate`,
@@ -101,14 +101,16 @@ valuable nutrients to the soil and improve soil structure.`,
 </script>
 
 <section class="pt-4 md:pt-20 m-2 md:m-4">
-  <h3 class="text-center !text-2xl">Agroecological practices</h3>
+  <Text class="text-center !text-2xl md:!text-4xl" variant="gradient"
+    >Agroecological practices</Text
+  >
   <Accordion
     value={current}
     on:change={(e) => (current = e.detail)}
     transitionDuration={1000}
   >
     {#each examples as example, i}
-      <Accordion.Item value={example.name}>
+      <Accordion.Item value={example.name} class="hidden">
         <div slot="control">
           <h3 class="text-lg">{i + 1}. {"  "}{example.name}</h3>
         </div>
@@ -123,11 +125,13 @@ valuable nutrients to the soil and improve soil structure.`,
   {#if examples.length > 0}
     <ul>
       {#each examples as example, i}
-        <li>
-          <h3 class="text-xl">{i + 1}.{"  "}{example.name}</h3>
-          <p class="p-2 leading-5">
+        <li class="py-4">
+          <Text size="lg" class="py-2 pl-4" underline
+            >{i + 1}.{"   "}{example.name}</Text
+          >
+          <Text class=" !leading-6 bg-white p-4 rounded-lg">
             {example.des}
-          </p>
+          </Text>
         </li>
       {/each}
     </ul>

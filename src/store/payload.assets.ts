@@ -15,6 +15,7 @@ import banana from "$lib/agripics/20240105135359_IMG_6666.JPG";
 import trees from "$lib/agripics/20240105140117_IMG_6691.JPG";
 import cows from "$lib/agripics/20240105140809_IMG_6705.JPG";
 import berries from "$lib/agripics/20240105143317_IMG_6737.JPG";
+import tea from "$lib/agripics/20240110115442_IMG_6741.JPG";
 export const agrimages = [
   [trossard, "Growing vegetables using discarded clothes"],
   [waterBottle, "A simple irrigation system for a vertical garden"],
@@ -35,6 +36,7 @@ export const agrimages = [
   ],
   [cows, "Green pastures promotes resilient  animal health"],
   [berries, "Growing strawberries on recycled plastic rice bags"],
+  [tea, "Biodiversity at play, integrating agroforestry to a tea farm"],
 ];
 
 export type Link = {
