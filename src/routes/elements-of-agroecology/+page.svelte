@@ -27,7 +27,7 @@
             ><td class="font-medium">{i + 1}.</td>
             <td class="text-left capitalize font-medium w-auto md:w-60"
               >{element.name}</td
-            ><td class=" px-2 text-justify font-medium"
+            ><td class=" px-2 font-medium"
               >{element.des.length > 0 ? element.des : lorem}</td
             >
           </tr>

@@ -9,8 +9,10 @@
   import Header from "./Header.svelte";
   import "./styles.css";
   import MobileMenu from "$components/MobileMenu/MobileMenu.svelte";
+  import ContactModal from "$components/ContactModal/Contact.svelte";
 
   let bgStyles = "";
+  let open = false;
 </script>
 
 <div class="app">
@@ -28,11 +30,18 @@
       <main class=" border-greens-400 borders">
         <slot />
       </main>
+      <ContactModal {open} closeModal={() => (open = false)} />
       <Footer
         height={60}
         class="bg-green-700 text-white flex items-center justify-center fixed bottom-0 w-full"
       >
         <p>All rights Reserved &copy; {new Date().getFullYear()}</p>
+        <button
+          class="absolute right-4 bottom-2 text-sm"
+          on:click={() => (open = true)}
+        >
+          Contact Us
+        </button>
       </Footer>
     </SvelteUIProvider>
   </AppShell>

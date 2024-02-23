@@ -73,7 +73,7 @@ export let links: Link[] = [
       icon: Flower2,
     },*/
   {
-    name: "Resources",
+    name: "Resources/Links",
     link: "/related-links",
     active: false,
     icon: Link,
