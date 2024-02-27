@@ -44,7 +44,7 @@
       <ContactModal {open} closeModal={() => (open = false)} />
       <Footer
         height={60}
-        class="bg-green-700 text-white flex items-center justify-center fixed bottom-0 w-full"
+        class="bg-green-700 text-white flex items-center justify-center !fixed bottom-0 w-full"
       >
         <p>All rights Reserved &copy; {new Date().getFullYear()}</p>
         <button
