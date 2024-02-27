@@ -26,7 +26,7 @@
   let bgStyles = "";
 </script>
 
-<div class="app">
+<div class="app relative">
   <AppShell>
     <Navbar class=" p-2 !h-16 !hidden md:!block " width={{ base: "100%" }}
       ><Header /></Navbar
@@ -42,9 +42,8 @@
         <slot />
       </main>
       <ContactModal {open} closeModal={() => (open = false)} />
-      <Footer
-        height={60}
-        class="bg-green-700 text-white flex items-center justify-center !fixed bottom-0 w-full"
+      <footer
+        class="bg-green-700 h-16 text-white flex items-center justify-center !absolute !bottom-0 w-full"
       >
         <p>All rights Reserved &copy; {new Date().getFullYear()}</p>
         <button
@@ -53,7 +52,7 @@
         >
           Contact Us
         </button>
-      </Footer>
+      </footer>
     </SvelteUIProvider>
   </AppShell>
 </div>

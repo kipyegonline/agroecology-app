@@ -59,7 +59,7 @@
 <Modal class="p-8" opened={open} title={""} on:close={handleClose}>
   <form on:submit|preventDefault={handleSubmit}>
     <p class=" mb-3 text-center py-2 text-xl font-medium">
-      Contact Agroecology Ke
+      Contact Agroecology Kenya
     </p>
     <div class="flex flex-col gap-1 mb-3 rounded-sm">
       <label for="name">Enter name:</label>
