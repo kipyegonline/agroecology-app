@@ -80,7 +80,7 @@ food production systems to a more sustainable and resilient food production syst
     >Benefits of Agroecology</Text
   >
   <Center class="w-full">
-    <SvelteCard class="p-4 flex flex-col md:flex-row gap-4">
+    <SvelteCard class="!p-4 !flex flex-col md:flex-row gap-4">
       <Box
         class=" flex flex-col items-center  gap-4 w-full md:w-1/2 rounded-lg "
       >

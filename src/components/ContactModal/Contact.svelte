@@ -22,10 +22,12 @@
         },
         body: JSON.stringify(payload),
       });
-    } catch (error) {
-      return null;
-    } finally {
+      const body = await response.json();
       loading = false;
+      if ("success" in body) return body;
+    } catch (error) {
+      loading = false;
+      return null;
     }
   };
 
@@ -47,7 +49,7 @@
       setTimeout(() => {
         success = "";
         closeModal();
-      }, 3000);
+      }, 4000);
     }
   };
 
@@ -56,7 +58,13 @@
   };
 </script>
 
-<Modal class="p-8" opened={open} title={""} on:close={handleClose}>
+<Modal
+  class="p-4 md:p-8 "
+  opened={open}
+  title={""}
+  size="md"
+  on:close={handleClose}
+>
   <form on:submit|preventDefault={handleSubmit}>
     <p class=" mb-3 text-center py-2 text-xl font-medium">
       Contact Agroecology Kenya
@@ -96,15 +104,13 @@
       <Loader variant="dots" class="w-full py-2" size={60} />
     {/if}
 
-    {#if !loading}
-      <button
-        disabled={loading}
-        type="submit"
-        class="p-2 bg-green-600 text-white w-full rounded-lg"
-      >
-        Submit</button
-      >
-    {/if}
+    <button
+      disabled={loading}
+      type="submit"
+      class="p-2 bg-green-600 text-white w-full rounded-lg"
+      >{loading ? "Submitting" : "Submit"}
+    </button>
+
     {#if success}
       <Notification
         title="Success"
