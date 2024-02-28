@@ -17,12 +17,13 @@
     );
     appLinks.set(links);
   };
+  let navstyles = "h-12 w-20 max-w-full";
 </script>
 
 <header>
-  <div class="corner">
+  <div class="corners">
     <a href="/">
-      <img src={logo} alt="SvelteKit" class="h-40 w-40 max-w-full" />
+      <img src={logo} alt="SvelteKit" class={navstyles} />
     </a>
   </div>
 

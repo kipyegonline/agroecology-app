@@ -72,13 +72,13 @@ export let links: Link[] = [
       active: false,
       icon: Flower2,
     },*/
+  { name: "Blogs", link: "/blogs", active: false, icon: Rss },
   {
     name: "Resources/Links",
     link: "/related-links",
     active: false,
     icon: Link,
   },
-  { name: "Blogs", link: "/blogs", active: false, icon: Rss },
 ];
 
 export const challenges = [

@@ -22,13 +22,20 @@
       <a href="/">
         <img
           src={logo}
-          on:click={()=>{closeMenu();handleLinkClick("/")}}
+          on:click={() => {
+            closeMenu();
+            handleLinkClick("/");
+          }}
           alt="SvelteKit"
           class="h-full w-auto max-w-full rounded-lg"
         />
       </a>
     </div>
-
+    <Text
+      variant="gradient"
+      size="lg"
+      class="relative top-1/3 text-xl uppercase">Agroecology</Text
+    >
     <Burger {opened} on:click={() => (opened = !opened)} size="lg" />
   </div>
   <div
