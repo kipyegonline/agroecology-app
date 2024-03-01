@@ -8,20 +8,11 @@
   } from "@svelteuidev/core";
   import Header from "./Header.svelte";
   import "./styles.css";
-  import { onMount } from "svelte";
+
   import MobileMenu from "$components/MobileMenu/MobileMenu.svelte";
   import ContactModal from "$components/ContactModal/Contact.svelte";
 
   let open = false;
-  onMount(() => {
-    window.dataLayer = window.dataLayer || [];
-    function gtag() {
-      dataLayer.push(arguments);
-    }
-    gtag("js", new Date());
-
-    gtag("config", "G-1466RY5B8K");
-  });
 
   let bgStyles = "";
 </script>
