@@ -19,9 +19,10 @@
 
 <div class="app">
   <AppShell>
-    <Navbar class=" p-2 !h-16 !hidden md:!block " width={{ base: "100%" }}
+    <!-- <Navbar class=" p-2 !h-16 !hidden md:!block " width={{ base: "100%" }}
       ><Header /></Navbar
-    >
+    >-->
+   
     <MobileMenu />
     <SvelteUIProvider
       class="border--400 border container relative "
