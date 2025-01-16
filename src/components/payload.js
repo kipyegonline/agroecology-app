@@ -125,7 +125,7 @@ where water and air can permeate.`,
   },
   {
     name: "Animal health",
-    description: `Ensure animal health and welfare`,
+    description: `Animal health in agroecology embraces a holistic approach that focuses on prevention through proper nutrition, stress reduction, and natural behavior support. By integrating traditional knowledge with modern practices and allowing animals to express their natural instincts through access to diverse pastures and appropriate social structures, this system promotes robust immune systems while reducing dependence on synthetic medications.`,
     categories: ["FI", "FA"],
     fao: ["resilience"],
     image: animal,
