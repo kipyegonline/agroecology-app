@@ -36,7 +36,8 @@
         icon: '🌡️'
       }
     ];
-    import bg2 from "$lib/agripics/20230908153132_IMG_0882.JPG";
+    import bg2 from "$lib/2025/plants.jpg";
+    import og from "$lib/2025/IMG_3366.JPG";
     import tea from "$lib/agripics/20240110115442_IMG_6741.JPG";
   </script>
   

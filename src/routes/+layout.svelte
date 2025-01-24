@@ -12,7 +12,7 @@
   import MobileMenu from "$components/MobileMenu/MobileMenu.svelte";
   import ContactModal from "$components/ContactModal/Contact.svelte";
   import AppFooter from "$components/Footer/index.svelte";
-
+import Nav from "$components/Nav/index.svelte"
   let open = false;
 const setOpen=()=>{ 
   
@@ -26,7 +26,7 @@ const setOpen=()=>{
     <!-- <Navbar class=" p-2 !h-16 !hidden md:!block " width={{ base: "100%" }}
       ><Header /></Navbar
     >-->
-   
+    <Nav/>
     <MobileMenu />
     <SvelteUIProvider
       class="border--400 border container relative "

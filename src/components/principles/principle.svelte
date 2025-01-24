@@ -2,7 +2,7 @@
       import { ChevronRight, Leaf, Tractor as Farm, Sprout, Filter, Users, Heart } from 'lucide-svelte';
   import type { POE } from "$store/store";
 
-    export let principle={}
+    export let principle:POE={}
       // Function to get appropriate icon based on principle name
       function getPrincipleIcon(name:string) {
       const icons = {
@@ -16,7 +16,7 @@
       return icons[name] || Leaf;
     }
 </script>
-<article class="group bg-white dark:bg-gray-800 rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 flex flex-col">
+<article id="principles" class="group bg-white dark:bg-gray-800 rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 flex flex-col">
     <!-- Image Container -->
     <div class="relative h-48 overflow-hidden">
       <img

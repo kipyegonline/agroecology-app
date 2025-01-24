@@ -1,5 +1,6 @@
 <script>
   import { Accordion, Text } from "@svelteuidev/core";
+  import Examples from "../../components/Examples/index.svelte";
   let examples = [
     {
       name: "Minimum tillage",
@@ -138,4 +139,5 @@ valuable nutrients to the soil and improve soil structure.`,
   {:else}
     <p>Loading..</p>
   {/if}
+  <Examples examples={examples}/>
 </section>

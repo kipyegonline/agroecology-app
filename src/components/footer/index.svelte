@@ -12,7 +12,7 @@
         <div class="flex items-center gap-2 text-sm">
           <span>Made with</span>
           <Heart size={16} fill="#ff0000" color="#ff0000" class="animate-pulse"/>
-          <a href="https:resume-vince.vercel.app" class="text-white font-medium" target="_blank">by Vincent Kipyegon</a>
+          <a href="https://vince-resume.vercel.app/" class="text-white font-medium" target="_blank">by Vincent Kipyegon</a>
          
         </div>
       </div>
