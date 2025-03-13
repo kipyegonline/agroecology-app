@@ -9,7 +9,7 @@
   const locallinks = isWindow
     ? JSON.parse(localStorage.getItem(title) as string)
     : null;
-  const setItem = (items: links[]) =>
+  const setItem = (items: Links[]) =>
     localStorage.setItem(title, JSON.stringify(items));
   onMount(() => {
     if (locallinks) {
@@ -114,33 +114,52 @@
   <meta name="description" content=" Agroecology resources" />
 </svelte:head>
 
-<section class="pt-4 md:pt-20 m-2 md:m-4">
-  <ul class="flex gap-2 flex-col">
-    {#if links}
-      {#each links as link, i (link.link)}
-        <li class="p-2 md:p-4 bg-white rounded-lg min-h-4">
-          <a href={link.link} target="_blank" on:click={handleClick(link)}>
-            <div>
-              <p>
-                {i + 1}. {" "}{link.name}
-                <ExternalLinkIcon
-                  class="inline-block reative -top-4"
-                  size={15}
-                />
-                {#if link?.clicked}
-                  <span title="clicked">
-                    <CheckCheckIcon
-                      class="float-right"
-                      color={link?.clicked ? "blue" : "lightblue"}
-                    /></span
-                  >
-                {/if}
-              </p>
-              <small>{link.des}</small>
-            </div>
-          </a>
-        </li>
-      {/each}
+<section class="pt-4 md:pt-20 m-2 md:m-4 min-h-screen">
+ 
+  <h1 class="text-3xl md:text-4xl font-bold text-center text-emerald-700 mb-12 tracking-tight">
+   Links related to Agroecology.
+  </h1>
+
+
+
+
+<div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+
+  {#if links?.length === 0}
+    <div class="text-center text-gray-600 dark:text-gray-300">No related links available.</div>
+  {:else}
+   {#if Array.isArray(links)}
+    {#each links as link, i (link.link)}
+      <a
+        href={link.link}
+        target="_blank"
+        rel="noopener noreferrer"
+        class="bg-white dark:bg-gray-800 rounded-md shadow hover:shadow-lg transition-shadow duration-200 flex flex-col"
+      >
+        <div class=" flex-grow">
+          <div class="bg-jungle-600 dark:bg-jungle-400 p-4 transform hover:scale-105 hover:bg-jungle-400 transition-colors duration-200 text-white py-2 px-3 rounded-t-lg h-full">
+            <h3 class="font-medium line-clamp-4">{link.name}</h3>
+          </div>
+          
+        </div>
+        <div class="mt-4  py-3  mr-4 flex justify-center items-center text-jungle-600 dark:text-jungle-400 hover:text-jungle-800 dark:hover:text-jungle-600">
+          <span>Visit</span>
+          <ExternalLinkIcon
+            class="inline-block reative -top-4"
+            size={15}
+          />
+          {#if link?.clicked}
+            <CheckCheckIcon class="inline-block relative -top-4" size={15} />
+          {/if}
+        </div>
+      </a>
+    {/each}
     {/if}
-  </ul>
+     
+  {/if}
+</div>
 </section>
+
+
+
+

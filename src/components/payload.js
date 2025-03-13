@@ -51,6 +51,7 @@ export const elements = [
 diversity, with surrounding forest resource biodiversity, insect biodiversity, soil organism
 biodiversity, plant and animal genetic diversity, habitat diversity, and the related diversities
 of culture and knowledge`,
+    image: diversity,
   },
   {
     name: `co-creation of knowledge`,

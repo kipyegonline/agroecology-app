@@ -37,7 +37,7 @@
       }
     ];
     import bg2 from "$lib/2025/plants.jpg";
-    import og from "$lib/2025/IMG_3366.JPG";
+    import og from "$lib/2025/IMG_3365.JPG";
     import tea from "$lib/agripics/20240110115442_IMG_6741.JPG";
   </script>
   
@@ -57,7 +57,7 @@
     <!-- Hero Section -->
     <section class="relative h-[500px] overflow-hidden">
       <img
-        src={tea}
+        src={og}
         alt="Agricultural landscape"
         class="w-full h-full object-cover"
       />

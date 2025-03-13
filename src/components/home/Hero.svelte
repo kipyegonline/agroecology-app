@@ -3,6 +3,7 @@
    
    export  let title="";
    import bg from "$lib/agripics/20231206112701_IMG_5391.JPG";
+   
   </script>
 
 
@@ -39,7 +40,7 @@
                     Agroecology is an integrated approach that simultaneously applies ecological and social concepts and principles to the design and management of sustainable food and agricultural systems.
                   </p>
                   <p class="text-xl text-gray-600 dark:text-gray-300 leading-relaxed">
-                    It seeks to optimize the interactions between plants, animals, humans, and the environment while taking into consideration the social aspects needed for a sustainable and fair food system.
+                    It seeks to optimize the interactions between <b>plants,</b> <b>animals,</b><b>humans,</b> and the  <b> environment</b>    while taking into consideration the social aspects needed for a sustainable and fair food system.
                   </p>
                   <div class="pt-4">
                     <h2 class="text-2xl font-bold text-gray-800 dark:text-white mb-4">Why Agroecology?</h2>
