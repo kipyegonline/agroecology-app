@@ -15,6 +15,7 @@
       };
       return icons[name] || Leaf;
     }
+    const scale = { FA: "farm", FS: "food system", FI: "field" };
 </script>
 <article id="principles" class="group bg-white dark:bg-gray-800 rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 flex flex-col">
     <!-- Image Container -->
@@ -40,7 +41,7 @@
       <!-- Categories -->
       <div class="flex flex-wrap gap-2 mb-4">
         {#each principle?.categories as category}
-          <span class="px-3 py-1 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-100 rounded-full text-sm">
+          <span class="px-3 py-1 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-100 rounded-full text-sm" title={scale[category]}>
             {category}
           </span>
         {/each}
@@ -49,7 +50,7 @@
       <!-- FAO Tags -->
       <div class="flex flex-wrap gap-2 mb-4">
         {#each principle?.fao as tag}
-          <span class="px-3 py-1 bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-100 rounded-full text-sm">
+          <span class="px-3 py-1 bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-100 rounded-full text-sm"  >
             {tag}
           </span>
         {/each}
@@ -60,7 +61,7 @@
         <div class="text-blue-500 dark:text-blue-400">
           <svelte:component this={getPrincipleIcon(principle.name)} size={24} />
         </div>
-        <button class="flex items-center gap-2 text-blue-500 dark:text-blue-400 hover:text-blue-600 dark:hover:text-blue-300 transition-colors">
+        <button class=" hidden flexx items-center gap-2 text-blue-500 dark:text-blue-400 hover:text-blue-600 dark:hover:text-blue-300 transition-colors">
           Learn more
           <ChevronRight size={20} />
         </button>

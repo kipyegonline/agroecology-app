@@ -15,13 +15,46 @@
 
   let darkMode = false;
   let mobileMenuOpen = false;
+  let isVisible = true;
+  let lastScrollY = 0;
+  let scrollThreshold = 20; // Minimum scroll amount to trigger hiding/showing
 
   onMount(() => {
     if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
       darkMode = true;
       document.documentElement.classList.add('dark');
     }
+    
+    // Add scroll event listener
+    window.addEventListener('scroll', handleScroll);
+    
+    // Cleanup when component is destroyed
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
   });
+
+  function handleScroll() {
+    const currentScrollY = window.scrollY;
+    
+    // Check if we've scrolled enough to trigger a change
+    if (Math.abs(currentScrollY - lastScrollY) < scrollThreshold) {
+      return;
+    }
+    
+    // Show navbar when scrolling up, hide when scrolling down
+    if (currentScrollY < lastScrollY) {
+      // Scrolling up
+      isVisible = true;
+    } else {
+      // Scrolling down - only hide when we're not at the top of the page
+      if (currentScrollY > 50) {
+        isVisible = false;
+      }
+    }
+    
+    lastScrollY = currentScrollY;
+  }
 
   function toggleDarkMode() {
     darkMode = !darkMode;
@@ -33,7 +66,7 @@
   }
 </script>
 
-<nav class="bg-white dark:bg-gray-800 shadow-sm z-50">
+<nav class="bg-white dark:bg-gray-800 shadow-sm z-50 transition-all duration-300 {isVisible ? 'sticky top-0' : 'fixed -top-20'}" style="width: 100%;">
   <div class="max-w-7xl mx-auto px-4">
     <div class="flex justify-between items-center h-16">
       <div class="flex items-center">

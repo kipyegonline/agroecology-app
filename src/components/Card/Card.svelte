@@ -42,5 +42,6 @@
     {#each p.categories as cat}
       <Badge category={cat} />
     {/each}
+    
   </Center>
 </Card>
