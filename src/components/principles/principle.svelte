@@ -21,7 +21,7 @@
     <!-- Image Container -->
     <div class="relative h-48 overflow-hidden">
       <img
-        src={principle?.image}
+        src={principle?.gImage}
         alt={principle?.name}
         class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-300"
       />

@@ -11,7 +11,7 @@
 
   import MobileMenu from "$components/MobileMenu/MobileMenu.svelte";
   import ContactModal from "$components/ContactModal/Contact.svelte";
-  import AppFooter from "$components/Footer/index.svelte";
+  import AppFooter from "$components/footer/index.svelte";
 import Nav from "$components/Nav/index.svelte"
   let open = false;
 const setOpen=()=>{ 

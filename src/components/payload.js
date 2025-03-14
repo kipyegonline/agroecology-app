@@ -12,6 +12,25 @@ import fairness from "../lib/pics/fairness-blue-gradient-concept-icon-vector-465
 import connectivity from "../lib/pics/business-connectivity-infographic-vector-22962846.jpg";
 import governance from "../lib/pics/governance-turquoise-concept-icon-vector-47225822.jpg";
 import participation from "../lib/pics/participation-blue-gradient-concept-icon-vector-42871374.jpg";
+import _diversity from "../lib/elements/diversity.png";
+import _cocreation from "../lib/elements/cocreation.png";
+import _synergies from "../lib/elements/synergies.png";
+import _efficiency from "../lib/elements/efficiency.png";
+import _recycling from "../lib/elements/recycling.png";
+import _resilience from "../lib/elements/resilience.png";
+import _human_social from "../lib/elements/human_social_values.png";
+import _culture from "../lib/elements/culture.png";
+import _governance from "../lib/elements/responsible_governance.png";
+import _circular from "../lib/elements/circular_economy.png";
+import _participation from "../lib/elements/participation.png";
+import _soil from "../lib/elements/soil_health.png";
+import _animal from "../lib/elements/animal_health.png";
+import _input from "../lib/elements/input_reduction.png";
+import _biodiversity from "../lib/elements/biodiversity.png";
+import _connectivity from "../lib/elements/connectivity.png";
+import _fairness from "../lib/elements/fairness.png";
+import _knowledge from "../lib/elements/cocreation.png";
+import _economic_diversification from "../lib/elements/economic_diversification.png";
 
 export const agroecology = `Agroecology is an integrated approach that simultaneously applies ecological
 and social concepts and principles to the design and management of food and
@@ -51,48 +70,57 @@ export const elements = [
 diversity, with surrounding forest resource biodiversity, insect biodiversity, soil organism
 biodiversity, plant and animal genetic diversity, habitat diversity, and the related diversities
 of culture and knowledge`,
-    image: diversity,
+    image: _diversity,
   },
   {
     name: `co-creation of knowledge`,
     des: ` This entails blending indigenous and traditional knowledge with traders’ and producers’ knowledge and global scientific knowledge.
 
 It involves encouraging encouraging participatory processes and institutional innovations that develop mutual trust enables sharing knowledge and co-creation that contributes to relevant agroecological processes.`,
+    image: _cocreation,
   },
   {
     name: `Synergies`,
     des: `Developing synergies help enhance key functions across food systems and support the production and multiple ecosystem services. Synergy in the ecosystem improves crop yield, weed control,pest control,biodiversity and improved soil structure`,
+    image: _synergies,
   },
   {
     name: `efficiency`,
     des: "Efficiency is achieved through minimizing farm input and mechanization and instead integrating existing ecological functions such as recycling,water harvesting and protecting biodiversity.",
+    image: _efficiency,
   },
   {
     name: `recycling`,
     des: "Recycling of waste ensure that nutrients is absorbed back to the environment and build up on ecological synergy of the environment. Recycling also entails minimizing pollution, protection of biomass and promoting environment synergies. ",
+    image: _recycling,
   },
   {
     name: `resilience`,
     des: `Agroecology enhances the resilience of communities, people, and ecosystems to sustain food and agricultural systems. Agroecology practices ensures the systems are reslient to pest attacks and diseases. It also enhance socio-economic resilience`,
+    image: _resilience,
   },
   {
     name: `human and social values`,
     des: `Agroecology emphasizes human and social values, including equity, dignity, justice, and inclusion, which contribute to improved livelihoods.`,
+    image: _human_social,
   },
   {
     name: `Culture
 and food traditions`,
     des: `Agroecology contributes to food nutrition and security while maintaining the health of the ecosystem when healthy, diversified, and culturally appropriate diets are supported. 
     It rebalances modern and traditional food habits and brings them together to promote healthy food production and consumption`,
+    image: _culture,
   },
   {
     name: `responsible governance`,
     des: `An accountable, transparent, and inclusive governance system is essential in creating an enabling environment that supports producers to transition their systems to agroecological practices and concept`,
+    image: _governance,
   },
   {
     name: `Circular and
 solidarity economy`,
     des: `Agroecology reconnects producers and consumers through a circular and solidarity economy, prioritizing local markets and supporting local economic developments`,
+    image: _circular,
   },
 ];
 export const poe = [
@@ -103,6 +131,7 @@ of nutrients and biomass`,
     categories: ["FI", "FA"],
     fao: ["Recycling"],
     image: recycling,
+    gImage: _recycling,
     more: "CLosing nutrient and energy loops within agroecosystems through practices such as compositing,organic waste recycling and biogas production.",
   },
   {
@@ -111,6 +140,7 @@ of nutrients and biomass`,
     categories: ["FA", "FS"],
     fao: ["Efficiency"],
     image: input,
+    gImage: _input,
     more: "Optimizing resourc use by minimizing external inputs and maximizing internal resource cycles.",
   },
   {
@@ -120,6 +150,7 @@ particularly by managing organic matter and enhancing soil biological activity`,
     categories: ["FI"],
     fao: ["diversity", "synergies", "Resilience"],
     image: soil,
+    gImage: _soil,
     more: `We want to have soilthat has good structure and a lot of organic matter, and soil biological activity. Organic
 matter produces substances that allow soil particles to aggregate, with lots of micropores
 where water and air can permeate.`,
@@ -130,7 +161,8 @@ where water and air can permeate.`,
     categories: ["FI", "FA"],
     fao: ["resilience"],
     image: animal,
-    more: "",
+    gImage: _animal,
+    more: "Promoting animal health and welfare through practices that support natural behaviors, reduce stress and prevent diseases.",
   },
   {
     name: "Biodiversity",
@@ -140,6 +172,7 @@ ment.`,
     categories: ["FI", "FA"],
     fao: ["diversity"],
     image: diversity,
+    gImage: _biodiversity,
     more: `When ecosystems are diverse, there are many pathways for ecological processes, so
 if one is damaged or destroyed, an alternative pathway can be usedFostering a diverse array of plant and animal speces withing agrosystems promotes beneficial interactions,resilience and ecosystem services.`,
   },
@@ -150,6 +183,7 @@ amongst the elements of agroecosystems (animals, crops, trees, soil and water).`
     categories: ["FI", "FA"],
     fao: ["synergy"],
     image: synergy,
+    gImage: _synergies,
     more: "It entails identifying and enhancing beneficial interactions between components of the agrosystems such as crop rotation, plant pollinator relatonships and nutrient cycling",
   },
   {
@@ -164,6 +198,7 @@ demand from consumers.`,
 and solidarity economy`,
     ],
     image: diversification,
+    gImage: _economic_diversification,
     more: "Building a circular economy within the food system that promotoes local production and consumption, fair trade practices and economic opportunities for rural communities.",
   },
   {
@@ -173,6 +208,7 @@ local and scientific innovation, especially through farmer-to-farmer exchange`,
     categories: ["FA", "FS"],
     fao: ["Co-creation", " sharing of knowledge"],
     image: knowledge,
+    gImage: _cocreation,
     more: "Promoting collaboration and knowledge exchange between farmers, researchers and otherstakeholders to develop and share context specific agroecological practices",
   },
   {
@@ -183,6 +219,7 @@ seasonally and culturally appropriate diets`,
     categories: ["FA", "FS"],
     fao: ["Human and social values", "Culture and food traditions"],
     image: values,
+    gImage: _human_social,
     more: "Integrating cultutal, ethical and social values into agroecological practices, ensuring equity,fairness and justice for all involved.Recognizing and valuing  traditional agricultural knowledge,practices and food cultures as valuable sources of inspiration and innovation for agroecologicel development",
   },
   {
@@ -193,6 +230,7 @@ intellectual property rights`,
     categories: ["FA", "FS"],
     fao: ["human and social values"],
     image: fairness,
+    gImage: _fairness,
     more: "Ensuring equitable access to land, resources and markets for all stakeholders.",
   },
   {
@@ -203,6 +241,8 @@ economies.`,
     categories: ["FA"],
     fao: ["circular and solidarity economy"],
     image: connectivity,
+    gImage: _connectivity,
+    more: "Promoting local food systems that connect producers and consumers, and support local economies and communities.",
   },
   {
     name: "Land and natural resource governance",
@@ -212,6 +252,8 @@ as sustainable managers of natural and genetic resources`,
     categories: ["FA", "FS"],
     fao: ["Responsible governance"],
     image: governance,
+    gImage: _governance,
+    more: "Promoting responsible governance of land and natural resources, including the recognition and support of family farmers, smallholders and peasant food producers as sustainable managers of natural and genetic resources.",
   },
   {
     name: "Participation.",
@@ -221,6 +263,8 @@ management of agricultural and food systems.`,
     categories: ["FS"],
     fao: ["human and social values"],
     image: participation,
+    gImage: _participation,
+    more: "Promoting social organization and participation in decision-making by food producers and consumers to support decentralized governance and local adaptive management of agricultural and food systems.",
   },
 ];
 

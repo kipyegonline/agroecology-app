@@ -15,6 +15,7 @@ export interface POE {
   fao: Array<string>;
   image: string;
   more: string;
+  gImage: string;
 }
 let _organic = `Organic farming is a system of agriculture that prioritizes natural
         processes and ecological balance over the use of synthetic chemicals. It
