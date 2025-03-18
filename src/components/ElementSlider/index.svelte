@@ -14,7 +14,7 @@
     RotateCcw, 
     Zap 
   } from 'lucide-svelte';
-  import { BackgroundImage, Image, Modal,Text } from '@svelteuidev/core';
+  import { BackgroundImage, Box, Image, Modal,Text } from '@svelteuidev/core';
 import _diversity from "$lib/elements/diversity.png";
 import _cocreation from "$lib/elements/cocreation.png";
 import _synergies from "$lib/elements/synergies.png";
@@ -196,7 +196,7 @@ import _economic_diversification from "$lib/elements/economic_diversification.pn
       <h2 class="text-3xl font-bold text-center mb-8">Elements of Agroecology</h2>
      
       <Modal opened={!!element} on:close={() => element = null}  size="xl" title={element?.title ?? ""} closeOnClickOutside={false} overflow="inside" >
-        <BackgroundImage src={element?.image} alt={element?.title} class="w-full h-[320px] md:h-[640px] object-cover"><Text></Text></BackgroundImage>
+        <Box><BackgroundImage src={element?.image} alt={element?.title} class="w-full !h-[320px] md:!h-[640px] object-cover"><Text></Text></BackgroundImage></Box>
        
         <div class="p-4">
           <p class="text-gray-600">{element?.description}</p>

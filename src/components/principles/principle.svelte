@@ -5,23 +5,7 @@
   let element:POE|null=null
 
     export let principle={} as POE
-      // Function to get appropriate icon based on principle name
-      function getPrincipleIcon(name:string) {
-      const icons = {
-        "Recycling": Filter,
-        "Input reduction": Leaf,
-        "Soil Health": Sprout,
-        "Animal health": Heart,
-        "Biodiversity": Farm,
-        "Synergy": Users,
-        "Economic Diversification": Farm,
-        "Social Values": Users,
-        "Knowledge and Skills": Users,
-        "Fairness": Users,
-        "Co-creation": Users,
-      };
-      return icons[name] || Leaf;
-    }
+    
     const handleElement=(principle:POE)=>{
       element=principle
     }

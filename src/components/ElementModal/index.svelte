@@ -10,12 +10,12 @@ export const close=()=>{
 <Modal opened={!!element} on:close={close} size="xl" class="overflow-y-scroll" closeOnClickOutside={false} overflow="inside">
   
 
-  <BackgroundImage src={element?.gImage} alt="" class="w-full h-[320px] md:h-[640px] object-cover relative " ><Text></Text>
+  <BackgroundImage src={element?.gImage} alt="" class="w-full !h-[320px] md:!h-[640px] object-cover relative " ><Text></Text>
    </BackgroundImage>
    <Box class='p-4 !text-white ' style="background:rgba(0,0,0,0.8)">
-    <Title class="pb-2 text-white">{element?.name}</Title>
-    <Text class="pb-2 text-white">{element?.description}</Text>
-    <Text class="text-white">{element?.more}</Text>
+    <Title class="pb-2 !text-white">{element?.name}</Title>
+   
+    <Text class="!text-white">{element?.more}</Text>
   </Box>
   
     
