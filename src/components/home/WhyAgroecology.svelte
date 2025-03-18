@@ -38,10 +38,10 @@
     ];
     import bg2 from "$lib/2025/plants.jpg";
     import og from "$lib/2025/IMG_3365.JPG";
-    import tea from "$lib/agripics/20240110115442_IMG_6741.JPG";
+    
   </script>
   
-  <main lass="min-h-screen transition-colors duration-300 {darkMode ? 'bg-gray-900 text-white' : 'bg-white text-gray-800'}">
+  <main class="min-h-screen transition-colors duration-300 {darkMode ? 'bg-gray-900 text-white' : 'bg-white text-gray-800'}">
     <!-- Navigation -->
     <nav class=" hidden py-4 px-6 flex justify-between items-center {darkMode ? 'bg-gray-800' : 'bg-white shadow-sm'}">
       <h1 class="text-2xl font-bold text-blue-500">AgroEco</h1>

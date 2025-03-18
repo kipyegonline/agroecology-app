@@ -114,7 +114,10 @@ import _economic_diversification from "$lib/elements/economic_diversification.pn
   
     onDestroy(() => {
       stopAutoplay();
-      window.removeEventListener('resize', handleResize);
+      if(globalThis?.window){
+        window.removeEventListener('resize', handleResize);
+      }
+     
     });
   
     // Autoplay functionality
@@ -185,7 +188,7 @@ import _economic_diversification from "$lib/elements/economic_diversification.pn
      
       element=IElement;
     };  
-    console.log(element,'tough')
+   
   </script>
   
   <div class="w-full py-8 bg-gray-50">
