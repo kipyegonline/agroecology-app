@@ -6,7 +6,7 @@
 
   const menuItems = [
     { icon: Home, name: 'Home', href: '/' },
-    { icon: Grid, name: 'Principles', href: '/v2#principles' },
+    { icon: Grid, name: 'Principles', href: '/#principles' },
     { icon: Layout, name: 'Elements', href: '/elements-of-agroecology' },
     { icon: BookOpen, name: 'Examples', href: '/agroecology-practices' },
     { icon: BookOpen, name: 'Blogs', href: '/blogs' },

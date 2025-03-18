@@ -3,8 +3,12 @@
    
    export  let title="";
    import bg from "$lib/agripics/20231206112701_IMG_5391.JPG";
+  import { ArrowBigDown, ArrowBigDownDash,MoreVertical,ScrollIcon,ChevronDownCircle} from "lucide-svelte";
   import { fade, fly } from "svelte/transition";
-   
+   const handleScroll=()=>{
+    const benefits=document.getElementById("benefits");
+    if(benefits) benefits.scrollIntoView({behavior:"smooth"})
+   }
   </script>
 
 
@@ -41,10 +45,10 @@
                     Agroecology is an integrated approach that simultaneously applies ecological and social concepts and principles to the design and management of sustainable food and agricultural systems.
                   </p>
                   <p in:fade={{ delay: 300, duration: 800 }} class="text-xl text-gray-600 dark:text-gray-300 leading-relaxed">
-                    It seeks to optimize the interactions between <b>plants,</b> <b>animals,</b><b>humans,</b> and the  <b> environment</b>    while taking into consideration the social aspects needed for a sustainable and fair food system.
+                    It seeks to optimize the interactions between <b class="text-jungle-600">plants,</b> <b class="text-jungle-600">animals,</b><b class="text-jungle-600">humans,</b> and the  <b class="text-jungle-600"> environment</b>    while taking into consideration the social aspects needed for a sustainable and fair food system.
                   </p>
                   <div class="pt-4">
-                    <h2 in:fly={{ y: -50, duration: 1000 }} class="text-2xl font-bold text-gray-800 dark:text-white mb-4">Why Agroecology?</h2>
+                    <h2 in:fly={{ y: -50, duration: 1000 }} class="text-2xl font-bold text-jungle-600 dark:text-white mb-4">Why Agroecology?</h2>
                     <p in:fade={{ delay: 300, duration: 800 }} class="text-xl text-gray-600 dark:text-gray-300 leading-relaxed">
                       Agroecology transforms existing food production systems into more sustainable and resilient food production systems, ensuring food security while preserving our environment.
                     </p>
@@ -54,6 +58,13 @@
             </div>
           </main>
         </div>
+      </div>
+      <div class="p-8 flex-col items-center relative -top-24 hidden md:flex">
+        <button on:click={handleScroll}><ChevronDownCircle size={72}  class="text-jungle-600"/>
+          <small>Scroll down</small></button>
+       
+        
+        
       </div>
     </div>
  

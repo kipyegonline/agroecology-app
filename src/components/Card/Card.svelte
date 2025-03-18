@@ -16,6 +16,7 @@
     fao: [],
     image: "",
     more: "",
+    gImage:""
   };
 </script>
 
