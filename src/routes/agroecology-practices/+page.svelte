@@ -1,5 +1,6 @@
 <script>
   import { Accordion, Text } from "@svelteuidev/core";
+  import Examples from "../../components/Examples/index.svelte";
   let examples = [
     {
       name: "Minimum tillage",
@@ -100,42 +101,7 @@ valuable nutrients to the soil and improve soil structure.`,
   let current = examples[0]?.name || "";
 </script>
 
-<section class="pt-4 md:pt-20 m-2 md:m-4">
-  <Text class="text-center !text-2xl md:!text-4xl" variant="gradient"
-    >Agroecological practices</Text
-  >
-  <Accordion
-    value={current}
-    on:change={(e) => (current = e.detail)}
-    transitionDuration={1000}
-  >
-    {#each examples as example, i}
-      <Accordion.Item value={example.name} class="hidden">
-        <div slot="control">
-          <h3 class="text-lg">{i + 1}. {"  "}{example.name}</h3>
-        </div>
-        <div class="bg-white py-4 px-2 rounded-lg">
-          <p class="p-2 leading-5">
-            {example.des}
-          </p>
-        </div>
-      </Accordion.Item>
-    {/each}
-  </Accordion>
-  {#if examples.length > 0}
-    <ul>
-      {#each examples as example, i}
-        <li class="py-4">
-          <Text size="lg" class="py-2 pl-4" underline
-            >{i + 1}.{"   "}{example.name}</Text
-          >
-          <Text class=" !leading-6 bg-white p-4 rounded-lg">
-            {example.des}
-          </Text>
-        </li>
-      {/each}
-    </ul>
-  {:else}
-    <p>Loading..</p>
-  {/if}
-</section>
+
+
+  <Examples examples={examples}/>
+

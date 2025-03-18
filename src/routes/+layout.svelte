@@ -11,18 +11,21 @@
 
   import MobileMenu from "$components/MobileMenu/MobileMenu.svelte";
   import ContactModal from "$components/ContactModal/Contact.svelte";
-
+  import AppFooter from "$components/footer/index.svelte";
+import Nav from "$components/Nav/index.svelte"
   let open = false;
+const setOpen=()=>{ 
+  
+  open = !open};
 
   let bgStyles = "";
 </script>
 
 <div class="app">
   <AppShell>
-    <Navbar class=" p-2 !h-16 !hidden md:!block " width={{ base: "100%" }}
-      ><Header /></Navbar
-    >
-    <MobileMenu />
+  
+    <Nav/>
+    
     <SvelteUIProvider
       class="border--400 border container relative "
       withNormalizeCSS
@@ -35,19 +38,8 @@
       <ContactModal {open} closeModal={() => (open = false)} />
     </SvelteUIProvider>
   </AppShell>
-  <footer
-    class="bg-green-700 h-16 text-white flex items-center justify-center !static left-0 right-0 bottom-0 w-full"
-  >
-    <p>All rights Reserved &copy; {new Date().getFullYear()}</p>
-    <div class="relative w-full">
-      <button
-        class="absolute bottom-0 right-0 md:right-4 md:bottom-2 text-sm"
-        on:click={() => (open = true)}
-      >
-        Contact Us
-      </button>
-    </div>
-  </footer>
+  <AppFooter handleClick={setOpen} />
+ 
 </div>
 
 <style>

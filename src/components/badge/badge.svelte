@@ -9,6 +9,6 @@
   export let category: keyof Scale = "FA";
 </script>
 
-<Badge size="lg" radius="sm" class="capitalize " variant="filled">
+<Badge size="lg" radius="sm" class="capitalize " variant="filled" title={scale[category]}>
   {scale[category]}
 </Badge>
