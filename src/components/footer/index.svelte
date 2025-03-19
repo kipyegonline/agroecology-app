@@ -1,10 +1,17 @@
 <script>
-    import { Heart, Mail } from 'lucide-svelte';
+    import { Heart, Mail,ChevronUpCircle } from 'lucide-svelte';
     const currentYear = new Date().getFullYear();
-    export let handleClick = () =>{};                     
+    export let handleClick = () =>{};          
+    const handleTop=()=>{
+      window.scroll(0,0)
+    }           
   </script>
   
-  <footer class="bg-green-800 text-white py-6 px-4 mt-auto">
+  <footer class="bg-green-800 text-white py-6 px-4 mt-auto relative">
+    <button  on:click={handleTop} title="Goto top" class="fixed right-4 bottom-2 flex flex-col">
+       <ChevronUpCircle class="text-white inline-block mr-2" size={48}/>
+      <small>Go to Top</small></button>
+   
     <div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-around items-center gap-4">
       <!-- Copyright and Made with Love -->
       <div class="flex flex-col sm:flex-row items-center gap-4">

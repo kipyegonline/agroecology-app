@@ -70,7 +70,7 @@
   <div class="max-w-7xl mx-auto px-4">
     <div class="flex justify-between items-center h-16">
       <div class="flex items-center">
-        <a href="/" class="flex items-center"> <Leaf class="h-8 w-8 text-jungle-600 dark:text-jungle-400" />
+        <a href="/" class="flex items-center"> <Leaf class="h-8 w-8 text-jungle-600 animate-pulse dark:text-jungle-400" />
           <span class="ml-2 text-xl font-semibold text-gray-800 dark:text-white">AgroEco</span></a>
        
       </div>
