@@ -59,13 +59,14 @@
 </script>
 
 <Modal
-  class="p-4 md:p-8 "
+  class="p-2 md:p-8 "
+  style="border:1px solid green;"
   opened={open}
   title={""}
   size="md"
   on:close={handleClose}
 >
-  <form on:submit|preventDefault={handleSubmit}>
+  <form on:submit|preventDefault={handleSubmit}   >
     <p class=" mb-3 text-center py-2 text-xl font-medium">
       Contact Agroecology Kenya
     </p>

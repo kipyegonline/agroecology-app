@@ -34,6 +34,7 @@ import _connectivity from "$lib/elements/connectivity.png";
 import _fairness from "$lib/elements/fairness.png";
 import _knowledge from "$lib/elements/cocreation.png";
 import _economic_diversification from "$lib/elements/economic_diversification.png";
+  import setAnalytics from '../../helpers';
  
     
     // Define the type for agroecology elements
@@ -185,6 +186,8 @@ import _economic_diversification from "$lib/elements/economic_diversification.pn
       startAutoplay();
     };
     const openModal = (IElement: AgroecologyElement) => {
+      
+      setAnalytics({eventType:"CTA",category:"Button click",label:"EOA"})
      
       element=IElement;
     };  
@@ -219,7 +222,7 @@ import _economic_diversification from "$lib/elements/economic_diversification.pn
             {#each displayedSlides as slide, i}
               <div class="flex-shrink-0" style="width: {slideWidth}px; padding: 0 8px;">
                 <div class="bg-white rounded-lg shadow-md overflow-hidden h-full">
-                  <img src={slide.image} alt={slide.title} class="w-full h-48 object-cover" />
+                  <img src={slide.image} alt={slide.title} class="w-full h-48 object-cover" height="200" width="100" loading="lazy"/>
                   <div class="p-4 flex flex-col">
                     <div class="flex-grow">
                       <h3 class="text-xl font-semibold mb-2"><svelte:component this={slide.icon} class="inline-block mr-2"/>{slide.title}</h3>

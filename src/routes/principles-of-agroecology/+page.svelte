@@ -19,7 +19,7 @@
 
 <svelte:head>
   <title>Home| {title}</title>
-  <meta name="description" content="Principles of agroecology" />
+  <meta name="description" content="13 Principles of agroecology" />
 </svelte:head>
 
 <section class="pt-4 md:pt-20 m-2 md:m-4">

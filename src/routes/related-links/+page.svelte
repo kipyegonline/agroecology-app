@@ -111,7 +111,7 @@
 
 <svelte:head>
   <title>Home| Agroecology app | related links and resources</title>
-  <meta name="description" content=" Agroecology resources" />
+  <meta name="description" content=" Agroecology resources, related links" />
 </svelte:head>
 
 <section class="pt-4 md:pt-20 m-2 md:m-4 min-h-screen">

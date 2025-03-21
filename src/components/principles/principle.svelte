@@ -2,11 +2,13 @@
       import { ChevronRight, Leaf, Tractor as Farm, Sprout, Filter, Users, Heart, } from 'lucide-svelte';
       import ElementModal from "$components/ElementModal/index.svelte"
   import { principlesofAgroEcology, type POE } from "$store/store";
+  import setAnalytics from '../../helpers';
   let element:POE|null=null
 
     export let principle={} as POE
     
     const handleElement=(principle:POE)=>{
+     setAnalytics({eventType:"CTA",category:"Button click",label:"POE"})
       element=principle
     }
     const scale = { FA: "farm", FS: "food system", FI: "field" };
@@ -18,6 +20,9 @@
       <img
         src={principle?.gImage}
         alt={principle?.name}
+        loading="lazy"
+        height="200"
+        width="200"
         class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-300"
       />
       <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex items-end">

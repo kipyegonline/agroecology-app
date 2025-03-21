@@ -99,9 +99,17 @@ valuable nutrients to the soil and improve soil structure.`,
     },
   ];
   let current = examples[0]?.name || "";
+  let title="Agroecology practices"
+  const description=`Examples of Agroecology`
 </script>
 
-
+<svelte:head>
+  <title>Practices | Agroecology app | {title}</title>
+  <meta
+    name="description"
+    content={description}
+  />
+</svelte:head>
 
   <Examples examples={examples}/>
 

@@ -3,7 +3,7 @@
    
    
    import bg from "$lib/agripics/20231206112701_IMG_5391.JPG";
-   export  let title="";
+ 
   import { ArrowBigDown, ArrowBigDownDash,MoreVertical,ScrollIcon,ChevronDownCircle} from "lucide-svelte";
   import { fade, fly } from "svelte/transition";
   import HeroSvg from './HeroSVG.svelte';
@@ -24,13 +24,6 @@
   </script>
 
 
-  <svelte:head>
-    <title>Home| Agroecology app | {title}</title>
-    <meta
-      name="description"
-      content="A one stop platform for agroecology;  principles of agroecology, Elements of agroecology and agroecology examples, pictorials and blogs"
-    />
-  </svelte:head>
   
 
 
@@ -65,7 +58,11 @@
                   <img 
                     src={bg}
                     alt="Sustainable farming"
-                    class="w-full h-96 object-cover"
+                    class="w-full h-96 object-cover "
+                    height="380"
+                    width="100"
+                     style="border:5px solid green"
+                    loading="lazy"
                   />
                 </div>
                 <div  class="text-left space-y-6">

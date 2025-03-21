@@ -60,6 +60,10 @@
         src={og}
         alt="Agricultural landscape"
         class="w-full h-full object-cover"
+        height="400"
+        width="800"
+        loading="lazy"
+       
       />
       <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
         <h2 class="text-4xl md:text-6xl font-bold text-white text-center px-4">
