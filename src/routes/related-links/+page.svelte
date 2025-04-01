@@ -4,24 +4,7 @@
   import { onDestroy, onMount } from "svelte";
   type Links = { name: string; link: string; des: string; clicked?: boolean };
   let title = "clicked-links";
-  let links: Links[] | undefined;
-  const isWindow = globalThis?.window;
-  const locallinks = isWindow
-    ? JSON.parse(localStorage.getItem(title) as string)
-    : null;
-  const setItem = (items: Links[]) =>
-    localStorage.setItem(title, JSON.stringify(items));
-  onMount(() => {
-    if (locallinks) {
-      if (locallinks.length !== defaultLinks.length) setItem(defaultLinks);
-      else links = locallinks;
-    } else {
-      links = defaultLinks;
-    }
-  });
-  onDestroy(() => {
-    if (links !== undefined) setItem(links);
-  });
+
   let defaultLinks = [
     {
       name: "The Organic Farmer (magazine,radio,articles,Mkulima Mbunifu,videos) ",
@@ -102,15 +85,13 @@
       des: "",
     },
   ];
-  const handleClick = (link: Links): null => {
-    if (links) {
-      links = links.map((li) =>
-        li.link === link.link ? { ...li, clicked: true } : { ...li }
-      );
-    }
-    return null;
-  };
+ 
   const descriptions=defaultLinks.map(dl=>`${dl.name}`).join(",  ")
+  onMount(()=>{
+    // remove tracking clicked links
+    const exists=JSON.parse(localStorage.getItem(title) as string);
+    if(exists)localStorage.removeItem(title)
+  })
 </script>
 
 <svelte:head>
@@ -129,11 +110,9 @@
 
 <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
 
-  {#if links?.length === 0}
-    <div class="text-center text-gray-600 dark:text-gray-300">No related links available.</div>
-  {:else}
-   {#if Array.isArray(links)}
-    {#each links as link, i (link.link)}
+
+   {#if Array.isArray(defaultLinks)}
+    {#each defaultLinks as link, i (link.link)}
       <a
         href={link.link}
         target="_blank"
@@ -152,15 +131,13 @@
             class="inline-block reative -top-4"
             size={15}
           />
-          {#if link?.clicked}
-            <CheckCheckIcon class="inline-block relative -top-4" size={15} />
-          {/if}
+        
         </div>
       </a>
     {/each}
     {/if}
      
-  {/if}
+  
 </div>
 </section>
 
