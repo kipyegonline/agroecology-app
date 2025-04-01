@@ -16,7 +16,11 @@ import trees from "$lib/agripics/20240105140117_IMG_6691.JPG";
 import cows from "$lib/agripics/20240105140809_IMG_6705.JPG";
 import berries from "$lib/agripics/20240105143317_IMG_6737.JPG";
 import tea from "$lib/agripics/20240110115442_IMG_6741.JPG";
+import custard from "$lib/2025/custard_apple.JPG";
+import ber from "$lib/2025/blossom_end_rot.JPG";
 export const agrimages = [
+  [custard, "Custard Apple fruits; exotic fruits "],
+  [ber, "Blossom0end rot disease on capsicum fruits (pili pili hoho)"],
   [trossard, "Growing vegetables using discarded clothes"],
   [waterBottle, "A simple irrigation system for a vertical garden"],
   [storey, "Multi storey kitchen garden"],

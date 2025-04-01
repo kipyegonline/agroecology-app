@@ -33,7 +33,10 @@
       des: "",
       link: "https://www.infonet-biovision.org",
     },
-    {
+    {name:" [PELUM] 12 Best Agroecological Practices",des:"",link:"https://www.pelumkenya.net/wp-content/uploads/2021/11/12-Best-Agroecological-Practices.pdf"},
+   {name:"Evaluating the Integration of Agroecological Principles into",des:"",link:"https://www.cifor-icraf.org/publications/pdf/reports/Kenya-Legal-Policy-Framework.pdf"},
+    {name:"[KNA] Agroecology Conference to propel push for sustainable agriculture",des:"",link:"https://www.kenyanews.go.ke/agroecology-conference-to-propel-push-for-sustainable-agriculture/"},
+   {
       name: "PUBLIC CONSULTATION FEEDBACK ON THE DRAFT NATIONAL AGROECOLOGY STRATEGY FOR FOOD SYSTEM TRANSFORMATION",
       des: "",
       link: "https://kilimo.go.ke/public-consultation-feedback-on-the-draft-national-agroecology-strategy-for-food-system-transformation-2/",
@@ -107,11 +110,12 @@
     }
     return null;
   };
+  const descriptions=defaultLinks.map(dl=>`${dl.name}`).join(",  ")
 </script>
 
 <svelte:head>
   <title>Home| Agroecology app | related links and resources</title>
-  <meta name="description" content=" Agroecology resources, related links" />
+  <meta name="description" content={`Agroecology resources, related : ${descriptions}` } />
 </svelte:head>
 
 <section class="pt-4 md:pt-20 m-2 md:m-4 min-h-screen">

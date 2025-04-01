@@ -15,6 +15,7 @@ function setAnalytics({
       event_label: label, // Label: customize this!
       value: 1, // Value (optional): customize this!
     });
+    console.log("principle event....");
   }
 }
 export default setAnalytics;

@@ -8,6 +8,7 @@
     export let principle={} as POE
     
     const handleElement=(principle:POE)=>{
+     
      setAnalytics({eventType:"CTA",category:"Button click",label:"POE"})
       element=principle
     }

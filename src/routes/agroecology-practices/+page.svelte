@@ -2,6 +2,11 @@
   import { Accordion, Text } from "@svelteuidev/core";
   import Examples from "../../components/Examples/index.svelte";
   let examples = [
+    {name:"Compost manure",des:` Compost manure is key in enhancing soil fertility, soil health and  
+improving crop yields.  Additionally, compost manure contains 
+micro-organisms which help to bring life in the soil thus increasing the 
+soil fertility. They include farm waste manure, vermicompost, farmyard manure and bokashi manure`},
+{name:"Seed saving",des:`Seed saving is the process of selecting and storing the bestand healthy seeds for planting in the next planting season. Seed saving enhances seed security,reduces reliance on commercial seeds,promotes crop diversity and increased access to food`},
     {
       name: "Minimum tillage",
       des: `No or minimum tillage
@@ -99,8 +104,11 @@ valuable nutrients to the soil and improve soil structure.`,
     },
   ];
   let current = examples[0]?.name || "";
+  const descriptions=examples.map(example=>example.name).join(" | ")
   let title="Agroecology practices"
-  const description=`Examples of Agroecology`
+  const description=`Examples of Agroecology | Best 
+Agroecological 
+Practices: ${descriptions}`
 </script>
 
 <svelte:head>
