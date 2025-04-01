@@ -7,7 +7,7 @@
 let title=`Elements of Agroecology`,description=`10 Elements of Agroecology: ${descriptions}`;
 </script>
 <svelte:head>
-  <title> Agroecology app | {title}</title>
+  <title> Agroecology app | {title + " "+ descriptions}</title>
   <meta
     name="description"
     content={description}

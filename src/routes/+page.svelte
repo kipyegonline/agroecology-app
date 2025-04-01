@@ -9,7 +9,7 @@ let description=`Agroecology in Kenya, Agroecology Kenya,| National Agroecology 
 </script>
 
 <svelte:head>
-  <title>Home| Agroecology app | {title}</title>
+  <title>Home| Agroecology app | {title + ' '+ description}</title>
   <meta
     name="description"
     content={description}

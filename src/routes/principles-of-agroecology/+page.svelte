@@ -15,11 +15,12 @@
   const handleClick = (num: number) => (current = num);
   let title = "Principles of agroecology";
   let h1styles = { padding: "5px", color: "blue", fontStyle: "italics" };
+  const descriptions=$principlesofAgroEcology.map(poe=>poe.name).join(" | ")
 </script>
 
 <svelte:head>
-  <title>Home| {title}</title>
-  <meta name="description" content="13 Principles of agroecology" />
+  <title>Home| {title+ " "+descriptions}</title>
+  <meta name="description" content={`13 Principles of agroecology- ${descriptions}`} />
 </svelte:head>
 
 <section class="pt-4 md:pt-20 m-2 md:m-4">

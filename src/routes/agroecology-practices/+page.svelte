@@ -105,7 +105,7 @@ valuable nutrients to the soil and improve soil structure.`,
   ];
   let current = examples[0]?.name || "";
   const descriptions=examples.map(example=>example.name).join(" | ")
-  let title="Agroecology practices"
+  let title="Agroecology practices: "+descriptions
   const description=`Examples of Agroecology | Best 
 Agroecological 
 Practices: ${descriptions}`

@@ -114,7 +114,7 @@
 </script>
 
 <svelte:head>
-  <title>Home| Agroecology app | related links and resources</title>
+  <title>Home| Agroecology app | related links and resources | {descriptions}</title>
   <meta name="description" content={`Agroecology resources, related : ${descriptions}` } />
 </svelte:head>
 
