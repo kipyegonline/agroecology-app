@@ -18,9 +18,11 @@ import berries from "$lib/agripics/20240105143317_IMG_6737.JPG";
 import tea from "$lib/agripics/20240110115442_IMG_6741.JPG";
 import custard from "$lib/2025/custard_apple.JPG";
 import ber from "$lib/2025/blossom_end_rot.JPG";
+import mushrooms from "$lib/2025/IMG_6273.JPG";
 export const agrimages = [
+  [mushrooms, "Mushrooms: From nature to table"],
   [custard, "Custard Apple fruits; exotic fruits "],
-  [ber, "Blossom0end rot disease on capsicum fruits (pili pili hoho)"],
+  [ber, "Blossom-end rot disease on capsicum fruits (pili pili hoho)"],
   [trossard, "Growing vegetables using discarded clothes"],
   [waterBottle, "A simple irrigation system for a vertical garden"],
   [storey, "Multi storey kitchen garden"],
