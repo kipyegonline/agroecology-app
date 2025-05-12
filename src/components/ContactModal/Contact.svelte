@@ -9,11 +9,22 @@
     success = "",
     loading = false,
     error = "";
+  const handleClose = () => {
+    closeModal();
+  };
+  const resetValues = () => {
+    (name = ""),
+      (email = ""),
+      (message = ""),
+      (success = ""),
+      (loading = false),
+      (error = "");
+  };
 
   const submitEmail = async (payload: any) => {
     try {
       loading = true;
-      let url = `https://formsubmit.co/ajax/vinnykipx@gmail.com`;
+      let url = `https://formsubmit.co/ajax/56feb811eea19636710bfee234cd05e0`;
       const response = await fetch(url, {
         method: "POST",
         headers: {
@@ -46,15 +57,12 @@
     let response = await submitEmail({ name, email, message });
     if (response) {
       success = "Message submitted successfully";
+      resetValues();
       setTimeout(() => {
         success = "";
         closeModal();
       }, 4000);
     }
-  };
-
-  const handleClose = () => {
-    closeModal();
   };
 </script>
 
@@ -66,7 +74,7 @@
   size="md"
   on:close={handleClose}
 >
-  <form on:submit|preventDefault={handleSubmit}   >
+  <form on:submit|preventDefault={handleSubmit}>
     <p class=" mb-3 text-center py-2 text-xl font-medium">
       Contact Agroecology Kenya
     </p>
